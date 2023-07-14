@@ -42,7 +42,7 @@ module.exports = {
   plugins: [
     ...htmlPlugins,
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "[name][contenthash].css",
     }),
     // new FontminPlugin({
     //   autodetect: true, // automatically pull unicode characters from CSS
