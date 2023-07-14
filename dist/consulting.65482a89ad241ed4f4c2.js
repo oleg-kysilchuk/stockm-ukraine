@@ -532,7 +532,7 @@ module.exports = styleTagTransform;
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "assets/stockm-logo.png";
+module.exports = __webpack_require__.p + "assets/stockm-logo8f193e59174c4c1184af.png";
 
 /***/ })
 
@@ -685,4 +685,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=consulting.b0f3071f5cac5a408e09.js.map
+//# sourceMappingURL=consulting.65482a89ad241ed4f4c2.js.map

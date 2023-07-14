@@ -276,13 +276,13 @@ i.icon {
   margin-bottom: 30px;
   font-size: 50px;
   // color: rgba(17, 17, 17, 0.85);
-  color: grey;
+  color: #dcdcdc;
   transition: all 0.25s cubic-bezier(0, 0, 0.58, 1);
 }
 
 .home-services__tab-label:hover,
 .home-services__tab-label:hover i.icon {
-  color: #111;
+  color: #000;
   transition: all 0.25s cubic-bezier(0, 0, 0.58, 1);
 }
 
@@ -297,7 +297,7 @@ i.icon {
 
 .home-services__tab-input:checked + label.home-services__tab-label,
 .home-services__tab-input:checked + label.home-services__tab-label > i.icon {
-  color: #111;
+  color: #000;
 }
 
 .home-contact {
