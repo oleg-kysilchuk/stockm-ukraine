@@ -3,7 +3,24 @@
 
 .clients {
   width: 100%;
-  padding: 50px 20px;
+  padding: 110px 20px 50px;
+  text-align: center;
+
+  &__title {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
 
   &__container {
     margin: 0 auto;
