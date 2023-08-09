@@ -1,5 +1,8 @@
 import "../pages/clients.html";
 import "../styles/clients.scss";
+import { highlightActivePage, links } from '../modules/util';
+
+links.forEach(link => highlightActivePage(link));
 
 // import { scrollToTop, showMobileNav, hideMobileNav, highlightActivePage, links } from "../modules/util";
 // window.addEventListener("scroll", scrollToTop);

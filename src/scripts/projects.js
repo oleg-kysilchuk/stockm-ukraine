@@ -1,5 +1,8 @@
 import "../pages/projects.html";
 import "../styles/projects.scss";
+import { highlightActivePage, links } from '../modules/util';
+
+links.forEach(link => highlightActivePage(link));
 // import {
 //   scrollToTop,
 //   showMobileNav,

@@ -64,6 +64,10 @@ body {
   }
 }
 
+.main-navigation__link[aria-current="page"] {
+  color: #F8921C;
+}
+
 .page-footer {
   display: flex;
   flex-direction: column;

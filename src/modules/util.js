@@ -2,7 +2,7 @@
 
 // const mobNav = document.querySelector(".mobile-navigation");
 
-// export const links = document.querySelectorAll('.page-navigation__link');
+export const links = document.querySelectorAll('.main-navigation__link');
 
 // export const scrollToTop = () => {
 //   if (window.scrollY > 200) {
@@ -22,8 +22,8 @@
 //   mobNav.classList.remove("show");
 // }
 
-// export function highlightActivePage (link) {
-//   if(link.href === window.location.href) {
-//     link.setAttribute('aria-current', 'page');
-//   }
-// }
+export function highlightActivePage (link) {
+  if(link.href === window.location.href) {
+    link.setAttribute('aria-current', 'page');
+  }
+}
