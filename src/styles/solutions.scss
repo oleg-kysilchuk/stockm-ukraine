@@ -91,7 +91,7 @@
 
 		&__item {
       max-width: 280px;
-      margin-bottom: 70px;
+      margin-bottom: 60px;
       position: relative;
       text-align: left;
 		}
@@ -115,7 +115,7 @@
 		&__item-text {
       font-size: 14px;
       color: #777;
-      line-height: 1.5;
+      line-height: 1.35;
       text-transform: none;
 		}
 
@@ -123,15 +123,12 @@
       width: 30%;
       margin-right: 35px;
 		}
+}
 
-		&__image {
-		}
-
-    &__block-left {
-		}
-
-		&__block-right {
-		}
+p.problems__item-text:nth-of-type(2n) {
+  color: #000;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .stockm-divider {
