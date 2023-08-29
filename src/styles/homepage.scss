@@ -30,16 +30,16 @@
 
 .home-divider {
   width: 100%;
-  height: 140px;
+  height: 125px;
   background-color: #111;
-  padding-top: 35px;
+  padding-top: 25px;
   text-align: center;
 
   &__title {
-    width: 60%;
     margin: 0 auto;
     font-size: 23px;
     font-weight: 300;
+    line-height: 1.65;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -90,46 +90,23 @@
 
 .home-clients-projects {
   width: 100%;
+  max-width: 1536px;
   height: 100%;
-  padding-top: 70px;
+  margin: 0 auto;
+  padding: 70px 20px 0;
 }
 
 .home-clients {
-  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 
   &__title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
-  }
-
-  &__link-container {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    background-color: #111;
-    text-align: center;
-  }
-
-  &__link.btn {
-    display: block;
-    margin: 0 auto;
-    padding: 9px 0px 0;
-    width: 235px;
-    height: 40px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    color: #000;
-    background-color: #fff;
-    border-radius: 4px;
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.85);
-    }
+    text-decoration: underline;
+    margin-bottom: 70px;
   }
 
   &__list {
@@ -156,14 +133,16 @@
 }
 
 .home-projects {
-  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 90px;
 
   &__title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    text-decoration: underline;
+    margin-bottom: 80px;
   }
 
   &__list {
@@ -195,12 +174,17 @@
   }
 }
 
+.home-all-clients {
+  margin: 0 auto;
+}
+
 .home-all-clients__title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  text-decoration: underline;
+  margin-bottom: 70px;
 }
 
 .btn.client-btn {
@@ -223,7 +207,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .swiper-slide {
@@ -342,9 +326,8 @@ i.icon {
 
 .home-contact {
   width: 100%;
-  height: 200px;
   background-color: #111;
-  padding-top: 50px;
+  padding: 40px 0;
   text-align: center;
 
   &__title {
@@ -389,6 +372,7 @@ i.icon {
 }
 
 .team-container {
+  margin: 0 auto;
   max-width: 1536px;
   display: flex;
   flex-direction: row;
