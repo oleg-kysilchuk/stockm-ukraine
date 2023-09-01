@@ -53,7 +53,7 @@
 }
 
 .divider-stockm {
-  min-height: 450px;
+  min-height: 380px;
   width: 100%;
   padding: 0 15%;
 
@@ -80,13 +80,9 @@
   font-size: 19px;
   color: rgba(255, 255, 255, 0.9);
 
-  &__title {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-
   &__text {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   &__image img {
@@ -94,10 +90,10 @@
   }
 
   &__more-btn {
-    height: 40px;
-    font-size: 13px;
+    height: 50px;
+    font-size: 14px;
     letter-spacing: 1px;
-    width: 30%;
+    width: 35%;
     padding: 0;
     border-radius: 3px;
     color: #000;
@@ -184,7 +180,8 @@
   }
 
   &__subtitle {
-    margin: 0 auto;
+    margin: 40px auto;
+    width: 67%;
     text-align: center;
     font-size: 26px;
   }
@@ -218,3 +215,68 @@
     max-height: 360px;
   }
 }
+
+
+// .divider-stockm {
+//   min-height: 450px;
+//   width: 100%;
+//   padding: 0 15%;
+
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+//     url("../assets/bg-parallax.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .stockm {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: flex-start;
+//   width: 50%;
+//   gap: 25px 0;
+//   font-size: 19px;
+//   color: rgba(255, 255, 255, 0.9);
+
+//   &__title {
+//     letter-spacing: 3px;
+//     text-transform: uppercase;
+//   }
+
+//   &__text {
+//     font-size: 15px;
+//   }
+
+//   &__image img {
+//     margin-top: -90px;
+//   }
+
+//   &__more-btn {
+//     height: 40px;
+//     font-size: 13px;
+//     letter-spacing: 1px;
+//     width: 30%;
+//     padding: 0;
+//     border-radius: 3px;
+//     color: #000;
+//     font-weight: 400;
+//     background-color: rgba(255, 255, 255, 0.9);
+//     border: none;
+
+//     &:hover {
+//       background-color: #fff;
+//       color: #000;
+//     }
+
+//     &:active {
+//       transform: scale(0.97);
+//     }
+//   }
+// }
