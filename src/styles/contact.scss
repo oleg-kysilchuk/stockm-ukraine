@@ -2,7 +2,7 @@
 @import "./util";
 
 .social {
-  padding: 200px 0 0 0;
+  padding-top: 200px;
   text-align: center;
 
   &__title {
@@ -13,10 +13,23 @@
     text-transform: uppercase;
     margin-bottom: 15px;
   }
+
+  @media (max-width: 991px) {
+    padding: 130px 0 50px;
+
+    &__title {
+      font-size: 15px;
+      letter-spacing: normal;
+    }
+  }
 }
 
 p.social__title {
   margin-bottom: 100px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 80px;
+  }
 }
 
 .social-links {
@@ -79,6 +92,13 @@ p.social__title {
 
   &__label:nth-child(2) {
     color: #444;
+  }
+
+  @media (max-width: 991px) {
+    padding-left: 25%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px 0px;
   }
 }
 
@@ -149,6 +169,30 @@ div.clearfix::after {
 .contact-form input:placeholder-shown,
 .contact-form textarea:placeholder-shown {
   border: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  color: #525252;
+  font-size: 16px;
+}
+
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  color: #525252;
+  font-size: 16px;
+}
+
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #525252;
+  font-size: 16px;
+}
+
+.contact-form input::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+  color: #525252;
+  font-size: 16px;
 }
 
 .contact-form input::-webkit-input-placeholder,
