@@ -4,6 +4,10 @@
 .projects-tabs {
   width: 100%;
   padding-top: 100px;
+
+  @media (max-width: 991px) {
+    padding-top: 120px;
+  }
 }
 
 .tabs {
@@ -58,7 +62,7 @@
     flex-wrap: wrap;
     order: 1;
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
   }
 
   &__tab-project {
@@ -68,12 +72,20 @@
 
   &__tab-link {
     display: block;
-    transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
 
     &:hover,
     &:focus img {
       transform: scale(1.1);
-      transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+      transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__tab-label {
+      margin: 0 5px 40px;
+      padding: 5px 1px;
+      font-size: 10px;
     }
   }
 }
@@ -87,5 +99,5 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
 }

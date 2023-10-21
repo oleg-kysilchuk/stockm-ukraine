@@ -62,6 +62,40 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (max-width: 991px) {
+    padding-top: 100px;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__tab-label {
+      font-size: 7px;
+    }
+
+    &__tab {
+      width: 90%;
+    }
+
+    &__tab-content:first-of-type {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    &__tab-content:nth-child(2) {
+      font-size: 16px;
+    }
+
+    &__tab-content:nth-child(n + 2) {
+      font-size: 14px;
+    }
+
+    &:nth-child(n + 2)::first-line {
+      font-size: 16px;
+    }
+  }
 }
 
 i.icon {
@@ -70,6 +104,10 @@ i.icon {
   font-size: 50px;
   color: #dcdcdc;
   transition: all 0.25s cubic-bezier(0, 0, 0.58, 1);
+
+  @media (max-width: 991px) {
+    font-size: 42px;
+  }
 }
 
 .consulting-services__tab-label:hover,
@@ -85,6 +123,11 @@ i.icon {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
 }
 
 .consulting-services__tab-input:checked + label.consulting-services__tab-label,
