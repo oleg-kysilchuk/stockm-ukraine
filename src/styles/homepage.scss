@@ -237,7 +237,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 7px 0px;
+    gap: 7pxs;
 
     img {
       height: 100px;
@@ -258,10 +258,16 @@
 
     &__list {
       flex-direction: column;
+      gap: 70px;
     }
 
     &__list-item {
       max-width: 90%;
+      gap: 20px;
+
+      img {
+        height: 70px;
+      }
     }
   }
 }
@@ -466,6 +472,7 @@ i.icon {
 
 @media (max-width: 991px) {
   .home-services__title {
+    font-size: 22px;
     margin-bottom: 50px;
   }
 
