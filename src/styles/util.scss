@@ -106,9 +106,10 @@ body {
   height: 110%;
   background-color: rgba(0, 0, 0, 0);
   z-index: 9999;
-  padding-top: 35%;
+  padding-top: 30%;
   transform: translateX(-100%);
   color: #f8921c;
+  overflow-y: auto;
 
   &__links {
     width: 100%;
