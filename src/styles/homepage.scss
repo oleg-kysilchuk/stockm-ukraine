@@ -30,7 +30,7 @@
   @media (max-width: 991px) {
     &__video {
       -o-object-fit: cover;
-         object-fit: cover;
+      object-fit: cover;
     }
 
     &__title {
@@ -112,7 +112,6 @@
   }
 
   @media (max-width: 991px) {
-
     &__title {
       font-size: 16px;
     }
@@ -124,6 +123,10 @@
     &__text-left,
     &__text-right {
       max-width: 100%;
+    }
+
+    &__text {
+      font-size: 14px;
     }
   }
 }
@@ -245,7 +248,7 @@
     }
 
     &__list-item {
-      max-width: 85%;
+      max-width: 90%;
     }
   }
 }
@@ -328,7 +331,7 @@
   &__title {
     font-size: 40px;
     font-weight: 300;
-    margin-bottom: 4%;
+    margin-bottom: 80px;
   }
 
   &__tab {
@@ -380,6 +383,27 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (max-width: 991px) {
+    padding-top: 50px;
+
+    &__title {
+      font-size: 36px;
+    }
+    
+    &__tab-label {
+      font-size: 15px;
+    }
+
+    &__tab {
+      width: 90%;
+    }
+
+    &__tab-content:first-of-type {
+      font-size: 19px;
+      text-align: left;
+    }
+  }
 }
 
 i.icon {
@@ -408,6 +432,19 @@ i.icon {
 .home-services__tab-input:checked + label.home-services__tab-label,
 .home-services__tab-input:checked + label.home-services__tab-label > i.icon {
   color: #000;
+}
+
+@media (max-width: 991px) {
+  .home-services__title {
+    margin-bottom: 50px;
+  }
+
+  .home-services__tab-input:checked
+    + label.home-services__tab-label
+    + div.home-services__tab-tab {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
 }
 
 .home-contact {
@@ -548,6 +585,7 @@ i.icon {
   padding: 20px 20px 70px;
 
   @media (max-width: 991px) {
+    padding-bottom: 0;
     margin-bottom: 30px;
   }
 }

@@ -36,7 +36,9 @@
             >
           </li>
           <li class="main-navigation__list-item">
-            <a class="main-navigation__link" href="./consulting.html">Консалтингові послуги</a>
+            <a class="main-navigation__link" href="./consulting.html"
+              >Консалтингові послуги</a
+            >
           </li>
           <li class="main-navigation__list-item">
             <a class="main-navigation__link" href="./clients.html">Клієнти</a>
@@ -50,90 +52,113 @@
           <li class="main-navigation__list-item">
             <a class="main-navigation__link" href="./contact.html">Контакти</a>
           </li>
-          <li class="main-navigation__list-item">
-            <select class="main-navigation__language" name="lang" id="lang">
-              <option value="ua">UA</option>
-              <option value="eng">ENG</option>
-            </select>
-          </li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-btn">☰</button>
+      <select class="main-navigation__language" name="lang" id="lang">
+        <option value="ua">UA</option>
+        <option value="eng">ENG</option>
+      </select>
     </header>
 
-    <section class="social">
-      <h1 class="social__title">Ми чекали на запит від вашої компанії.</h1>
-      <p class="social__title">Дякуємо, що звернулися до нас</p>
-      <div class="social-links">
-        <div class="social-links__item">
-          <div class="social-links__icon-container">
-            <i class="fas fa-solid fa-phone social-links__icon"></i>
-          </div>
-          <div class="social-links__labels-container">
-            <p class="social-links__label">Телефон</p>
-            <p class="social-links__label">+380982779520</p>
-          </div>
-        </div>
-
-        <div class="social-links__item">
-          <div class="social-links__icon-container">
-            <i class="fas fa-solid fa-location-dot social-links__icon"></i>
-          </div>
-          <div class="social-links__labels-container">
-            <p class="social-links__label">м. Київ</p>
-            <p class="social-links__label">Харківське шосе 190</p>
-          </div>
-        </div>
-
-        <div class="social-links__item">
-          <div class="social-links__icon-container">
-            <i class="fas fa-solid fa-envelope social-links__icon"></i>
-          </div>
-          <div class="social-links__labels-container">
-            <p class="social-links__label">Пошта</p>
-            <p class="social-links__label">snizhana@stockm.eu</p>
-          </div>
-        </div>
+    <div class="mobile-navigation">
+      <button class="mobile-navigation__close-btn">&#215;</button>
+      <div class="mobile-navigation__links">
+        <a href="/" class="mobile-navigation__link">Stock-M</a>
+        <a href="./about.html" class="mobile-navigation__link">Про Головне</a>
+        <a href="./solutions.html" class="mobile-navigation__link"
+          >Рішення Stock-M</a
+        >
+        <a href="./consulting.html" class="mobile-navigation__link"
+          >Консалтингові Послуги</a
+        >
+        <a href="./clients.html" class="mobile-navigation__link">Клієнти</a>
+        <a href="./projects.html" class="mobile-navigation__link">Проекти</a>
+        <a href="./events.html" class="mobile-navigation__link">Події</a>
+        <a href="./contact.html" class="mobile-navigation__link">Контакти</a>
       </div>
-    </section>
+    </div>
 
-    <section class="contact">
-      <form method="post" id="contact-form" class="contact-form">
-        <div class="clearfix">
-          <div class="contact-form__form-group">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              minlength="3"
-              maxlength="40"
-              placeholder="Ваше ім'я"
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Електронна пошта"
-              required
-            />
+    <main>
+      <section class="social">
+        <h1 class="social__title">Ми чекали на запит від вашої компанії.</h1>
+        <p class="social__title">Дякуємо, що звернулися до нас</p>
+        <div class="social-links">
+          <div class="social-links__item">
+            <div class="social-links__icon-container">
+              <i class="fas fa-solid fa-phone social-links__icon"></i>
+            </div>
+            <div class="social-links__labels-container">
+              <p class="social-links__label">Телефон</p>
+              <p class="social-links__label">+380982779520</p>
+            </div>
           </div>
 
-          <div class="contact-form__form-group">
-            <textarea
-              name="info"
-              id="info"
-              placeholder="Додаткова інформація"
-              maxlength="200"
-            ></textarea>
+          <div class="social-links__item">
+            <div class="social-links__icon-container">
+              <i class="fas fa-solid fa-location-dot social-links__icon"></i>
+            </div>
+            <div class="social-links__labels-container">
+              <p class="social-links__label">м. Київ</p>
+              <p class="social-links__label">Харківське шосе 190</p>
+            </div>
+          </div>
+
+          <div class="social-links__item">
+            <div class="social-links__icon-container">
+              <i class="fas fa-solid fa-envelope social-links__icon"></i>
+            </div>
+            <div class="social-links__labels-container">
+              <p class="social-links__label">Пошта</p>
+              <p class="social-links__label">snizhana@stockm.eu</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <button type="submit" class="contact-form__btn btn" form="contact-form">
-          Відправити
-        </button>
-      </form>
-    </section>
+      <section class="contact">
+        <form method="post" id="contact-form" class="contact-form">
+          <div class="clearfix">
+            <div class="contact-form__form-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                minlength="3"
+                maxlength="40"
+                placeholder="Ваше ім'я"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Електронна пошта"
+                required
+              />
+            </div>
+
+            <div class="contact-form__form-group">
+              <textarea
+                name="info"
+                id="info"
+                placeholder="Додаткова інформація"
+                maxlength="200"
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="contact-form__btn btn"
+            form="contact-form"
+          >
+            Відправити
+          </button>
+        </form>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <div class="footer-group-one">
@@ -191,7 +216,9 @@
             >
           </li>
           <li class="footer-nav__item">
-            <a href="./consulting.html" class="footer-nav__link">Консалтингові Послуги</a>
+            <a href="./consulting.html" class="footer-nav__link"
+              >Консалтингові Послуги</a
+            >
           </li>
           <li class="footer-nav__item">
             <a href="./clients.html" class="footer-nav__link">Клієнти</a>
@@ -210,7 +237,10 @@
 
       <div class="footer-group-three">
         <p class="footer-rights">© 2023 · STOCK-M.</p>
-        <p class="footer-slogan">Ефективна система керування асортиментом на основі Теорії Обмежень (ТОС).</p>
+        <p class="footer-slogan">
+          Ефективна система керування асортиментом на основі Теорії Обмежень
+          (ТОС).
+        </p>
       </div>
     </footer>
     <!-- ////////////// -->

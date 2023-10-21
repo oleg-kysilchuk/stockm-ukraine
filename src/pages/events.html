@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    
+
     <title>Події</title>
   </head>
   <body>
@@ -36,7 +36,9 @@
             >
           </li>
           <li class="main-navigation__list-item">
-            <a class="main-navigation__link" href="./consulting.html">Консалтингові послуги</a>
+            <a class="main-navigation__link" href="./consulting.html"
+              >Консалтингові послуги</a
+            >
           </li>
           <li class="main-navigation__list-item">
             <a class="main-navigation__link" href="./clients.html">Клієнти</a>
@@ -50,17 +52,35 @@
           <li class="main-navigation__list-item">
             <a class="main-navigation__link" href="./contact.html">Контакти</a>
           </li>
-          <li class="main-navigation__list-item">
-            <select class="main-navigation__language" name="lang" id="lang">
-              <option value="ua">UA</option>
-              <option value="eng">ENG</option>
-            </select>
-          </li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-btn">☰</button>
+      <select class="main-navigation__language" name="lang" id="lang">
+        <option value="ua">UA</option>
+        <option value="eng">ENG</option>
+      </select>
     </header>
+
+    <div class="mobile-navigation">
+      <button class="mobile-navigation__close-btn">&#215;</button>
+      <div class="mobile-navigation__links">
+        <a href="/" class="mobile-navigation__link">Stock-M</a>
+        <a href="./about.html" class="mobile-navigation__link">Про Головне</a>
+        <a href="./solutions.html" class="mobile-navigation__link"
+          >Рішення Stock-M</a
+        >
+        <a href="./consulting.html" class="mobile-navigation__link"
+          >Консалтингові Послуги</a
+        >
+        <a href="./clients.html" class="mobile-navigation__link">Клієнти</a>
+        <a href="./projects.html" class="mobile-navigation__link">Проекти</a>
+        <a href="./events.html" class="mobile-navigation__link">Події</a>
+        <a href="./contact.html" class="mobile-navigation__link">Контакти</a>
+      </div>
+    </div>
+
     <main>
-      <div class="temp"><img src="../assets/temp.jpg" alt="temp"></div>
+      <div class="temp"><img src="../assets/temp.jpg" alt="temp" /></div>
     </main>
     <footer class="page-footer">
       <div class="footer-group-one">
@@ -118,7 +138,9 @@
             >
           </li>
           <li class="footer-nav__item">
-            <a href="./consulting.html" class="footer-nav__link">Консалтингові Послуги</a>
+            <a href="./consulting.html" class="footer-nav__link"
+              >Консалтингові Послуги</a
+            >
           </li>
           <li class="footer-nav__item">
             <a href="./clients.html" class="footer-nav__link">Клієнти</a>
@@ -137,7 +159,10 @@
 
       <div class="footer-group-three">
         <p class="footer-rights">© 2023 · STOCK-M.</p>
-        <p class="footer-slogan">Ефективна система керування асортиментом на основі Теорії Обмежень (ТОС).</p>
+        <p class="footer-slogan">
+          Ефективна система керування асортиментом на основі Теорії Обмежень
+          (ТОС).
+        </p>
       </div>
     </footer>
     <!-- ////////////// -->

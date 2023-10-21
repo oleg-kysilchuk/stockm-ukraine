@@ -1,17 +1,17 @@
 import "./index.html";
 import "./index.scss";
 import { swiper } from "./modules/swiper"; ///????????????
-import { highlightActivePage, links } from "./modules/util";
+import { highlightActivePage, links, showMobileNav, hideMobileNav } from "./modules/util";
 
 links.forEach(link => highlightActivePage(link));
 
-// window.addEventListener('scroll', scrollToTop);
+const mobNavBtn = document.querySelector(".mobile-menu-btn");
+const mobLinks = document.querySelectorAll(".mobile-navigation__link");
+const closeBtn = document.querySelector(".mobile-navigation__close-btn");
 
-// const mobNavBtn = document.querySelector(".mobile-menu-btn");
-// const mobLinks = document.querySelectorAll(".mobile-navigation__link");
+mobNavBtn.addEventListener("click", showMobileNav);
+closeBtn.addEventListener('click', hideMobileNav);
 
-// mobNavBtn.addEventListener("click", showMobileNav);
-
-// mobLinks.forEach(function (link) {
-//   link.addEventListener("click", hideMobileNav);
-// });
+mobLinks.forEach(function (link) {
+  link.addEventListener("click", hideMobileNav);
+});
