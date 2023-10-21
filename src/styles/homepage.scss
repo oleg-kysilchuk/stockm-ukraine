@@ -414,8 +414,20 @@
     }
 
     &__tab-content:first-of-type {
-      font-size: 19px;
+      font-size: 16px;
       text-align: left;
+    }
+
+    &__tab-content:nth-child(2) {
+      font-size: 16px;
+    }
+
+    &__tab-content:nth-child(n+2) {
+      font-size: 14px;
+    }
+
+    &:nth-child(n + 2)::first-line {
+      font-size: 16px;
     }
   }
 }
