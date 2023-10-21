@@ -319,19 +319,19 @@ body {
   }
 
   .footer-logo {
-    width: 50%;
+    width: 40%;
     margin-bottom: 40px;
   }
 
   .footer-social {
     &__link {
-      width: 40px;
-      height: 40px;
-      margin: 0 20px;
+      width: 32px;
+      height: 32px;
+      margin: 0 15px;
     }
 
     &__link i.fas {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
 
