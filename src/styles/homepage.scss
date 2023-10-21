@@ -113,11 +113,13 @@
 
   @media (max-width: 991px) {
     &__title {
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: 600;
     }
 
     &__text-container {
       flex-direction: column;
+      gap: 40px;
     }
 
     &__text-left,
@@ -137,6 +139,10 @@
   height: 100%;
   margin: 0 auto;
   padding: 70px 20px 0;
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+  }
 }
 
 .home-clients {
@@ -175,9 +181,12 @@
   }
 
   @media (max-width: 991px) {
+    margin-bottom: 50px;
+    
     &__title {
-      font-size: 22px;
-      margin-bottom: 50px;
+      font-size: 20px;
+      margin-bottom: 40px;
+      text-decoration: none;
     }
 
     &__list {
@@ -188,7 +197,7 @@
     &__list-item {
       height: auto;
       max-height: 100%;
-      width: 70%;
+      width: 60%;
 
       img {
         max-height: 100px;
@@ -240,7 +249,8 @@
 
   @media (max-width: 991px) {
     &__title {
-      font-size: 22px;
+      font-size: 20px;
+      text-decoration: none;
     }
 
     &__list {
@@ -266,7 +276,8 @@
   margin-bottom: 70px;
 
   @media (max-width: 991px) {
-    font-size: 22px;
+    font-size: 20px;
+    text-decoration: none;
     margin-bottom: 50px;
   }
 }
@@ -392,7 +403,7 @@
     }
     
     &__tab-label {
-      font-size: 15px;
+      font-size: 13px;
     }
 
     &__tab {
@@ -412,6 +423,10 @@ i.icon {
   font-size: 50px;
   color: #dcdcdc;
   transition: all 0.25s cubic-bezier(0, 0, 0.58, 1);
+
+  @media (max-width: 991px) {
+    font-size: 46px;
+  }
 }
 
 .home-services__tab-label:hover,
@@ -503,7 +518,7 @@ i.icon {
   text-transform: uppercase;
 
   @media (max-width: 991px) {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 
@@ -518,6 +533,7 @@ i.icon {
   text-align: center;
 
   @media (max-width: 991px) {
+    width: 95%;
     flex-direction: column;
   }
 }
@@ -624,7 +640,8 @@ i.icon {
 
   @media (max-width: 991px) {
     &__title {
-      font-size: 22px;
+      font-size: 20px;
+      letter-spacing: 1px;
     }
 
     &__text {
