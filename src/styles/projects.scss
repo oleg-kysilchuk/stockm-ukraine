@@ -58,7 +58,7 @@
 
   &__tab-content {
     display: none;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     flex-wrap: wrap;
     order: 1;
@@ -84,13 +84,13 @@
 
   @media (max-width: 991px) {
     &__tab-label {
-      margin: 0 5px 40px;
+      margin: 0 2px 40px;
       padding: 5px 1px;
       font-size: 10px;
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1600px) {
+  @media (min-width: 992px) and (max-width: 1720px) {
     &__tab-label {
       font-size: 14px;
     }

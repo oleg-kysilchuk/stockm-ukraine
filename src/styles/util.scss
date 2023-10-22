@@ -120,7 +120,6 @@ body {
   padding-top: 30%;
   transform: translateX(-100%);
   color: #f8921c;
-  overflow-y: auto;
 
   &__links {
     width: 100%;
@@ -382,7 +381,7 @@ div.temp {
     padding-top: 70px;
   }
 
-  @media (min-width: 992px) and (max-width: 1660px) {
+  @media (min-width: 992px) and (max-width: 1720px) {
     margin: 0 auto;
     width: 60%;
   }

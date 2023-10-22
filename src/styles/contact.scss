@@ -23,7 +23,7 @@
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1600px) {
+  @media (min-width: 992px) and (max-width: 1720px) {
     padding-top: 150px;
 
     &__title {
@@ -39,7 +39,7 @@ p.social__title {
     margin-bottom: 80px;
   }
 
-  @media (min-width: 992px) and (max-width: 1600px) {
+  @media (min-width: 992px) and (max-width: 1720px) {
     margin-bottom: 80px;
   }
 }
@@ -113,7 +113,7 @@ p.social__title {
     gap: 40px 0px;
   }
 
-  @media (min-width: 992px) and (max-width: 1600px) {
+  @media (min-width: 992px) and (max-width: 1720px) {
     &__label:nth-child(1) {
       font-size: 11px;
     }
