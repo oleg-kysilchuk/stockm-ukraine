@@ -135,9 +135,13 @@
   }
 
   @media (max-width: 991px) {
+    padding: 50px 20px;
+    
     &__title {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 600;
+      text-indent: 0px;
+      margin-bottom: 30px;
     }
 
     &__text-container {
