@@ -96,6 +96,34 @@
       font-size: 16px;
     }
   }
+
+  @media (min-width: 992px) and (max-width: 1600px) {
+    &__title {
+      font-size: 30px;
+    }
+    
+    &__tab-label {
+      font-size: 12px;
+    }
+
+    &__tab-content {
+      &:nth-child(n + 2) {
+        font-size: 14px;
+      }
+  
+      &:nth-child(n + 2)::first-line {
+        font-size: 15px;
+      }
+  
+      &:nth-child(2) {
+        font-size: 15px;
+      }
+  
+      &:first-of-type {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 i.icon {
@@ -107,6 +135,10 @@ i.icon {
 
   @media (max-width: 991px) {
     font-size: 42px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1600px) {
+    font-size: 40px;
   }
 }
 

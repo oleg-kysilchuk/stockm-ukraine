@@ -33,6 +33,11 @@ body {
   @media (max-width: 991px) {
     height: 54px;
   }
+
+  @media (min-width: 992px) and (max-width: 1600px) {
+    height: 48px;
+    font-size: 12px;
+  }
 }
 
 .logo {
@@ -42,6 +47,12 @@ body {
 
   &__image {
     max-height: 50px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1600px) {
+    &__image {
+      max-height: 40px;
+    }
   }
 }
 
@@ -167,6 +178,10 @@ body {
   background-color: #fff;
   padding: 105px 0 60px;
   text-align: center;
+
+  @media (min-width: 992px) and (max-width: 1600px) {
+    padding-top: 80px;
+  }
 }
 
 .footer-group-one {
@@ -265,11 +280,27 @@ body {
   justify-content: center;
 
   &__item {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   &__link:hover {
     color: rgba(136, 136, 136, 1);
+  }
+
+  @media (max-width: 991px) {
+    &__item {
+      margin-right: 10px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1600px) {
+    &__item {
+      margin-right: 20px;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
   }
 }
 
@@ -346,9 +377,13 @@ body {
   }
 }
 
-
-@media (max-width: 991px) {
-  div.temp {
+div.temp {
+  @media (max-width: 991px) {
     padding-top: 70px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1660px) {
+    margin: 0 auto;
+    width: 60%;
   }
 }
