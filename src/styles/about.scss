@@ -1,6 +1,107 @@
 @import "../libs/reset";
 @import "./util";
 
+.about {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.morphing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(80, 80, 80, 0.5);
+}
+
+.phrase {
+  width: 100%;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: morph 15s infinite ease-in-out;
+          animation: morph 15s infinite ease-in-out;
+}
+
+.phrase:nth-child(1) {
+  -webkit-animation-delay: -15s;
+          animation-delay: -15s;
+}
+
+.phrase:nth-child(2) {
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.phrase:nth-child(3) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+@-webkit-keyframes morph {
+  
+  0% {
+    -webkit-filter: blur(1rem);
+            filter: blur(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes morph {
+  0%, 5%, 100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    -webkit-filter: blur(1rem);
+            filter: blur(1rem);
+    opacity: 0;
+  }
+}
+
+.about-btn {
+  position: absolute;
+  top: 59%;
+  width: 9%;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &:first-of-type{
+    left: 40.7%;
+  }
+
+  &:last-of-type {
+    right: 40.7%;
+  }
+}
+
 .solutions-problems {
   width: 100%;
   padding: 120px 20px 20px;
@@ -10,22 +111,6 @@
 
 .problems {
   margin: 0 auto;
-
-  &__title {
-    margin: 0 auto 25px;
-    font-size: 30px;
-    font-weight: 300;
-  }
-
-  &__text {
-    margin: 0 auto 10px;
-    font-size: 25px;
-    font-weight: 300;
-  }
-
-  &__text:last-of-type {
-    margin-bottom: 80px;
-  }
 
   &__container {
     max-width: 1536px;

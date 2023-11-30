@@ -54,7 +54,7 @@
 
 .solutions-tabs {
   width: 100%;
-  padding: 100px 20px;
+  padding: 80px 20px;
   background-color: #f8f8f8;
 }
 
@@ -158,6 +158,55 @@
   justify-content: center;
 }
 
+.text-block {
+  width: 100%;
+  padding: 4% 10% 5%;
+  background-color: #ffffff;
+  background-image: linear-gradient(109deg, #ffffff 0%, #f7f7f7 96%);
+
+  @media (max-width: 991px) {
+    padding: 50px 15px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1720px) {
+    padding: 3% 10%;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1720px) {
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
 .divider-stockm {
   min-height: 380px;
   height: calc(100vh - 60px);
@@ -208,6 +257,20 @@
   }
 }
 
+.divider-grey {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+
+  &__title {
+    margin: 0 auto;
+    width: 65%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
 .divider-white {
   width: 100%;
   padding: 35px 15px;
@@ -241,7 +304,12 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  &__title-first {
+    width: 80%;
+    font-size: 24px;
   }
 
   &__subtitle {
