@@ -246,6 +246,7 @@
 
   &__image img {
     max-height: 380px;
+    margin-top: -40px;
   }
 
   &__title {
@@ -257,17 +258,135 @@
   }
 }
 
-.divider-grey {
+// .divider-stockm {
+//   min-height: 450px;
+//   width: 100%;
+//   padding: 0 8%;
+
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   align-items: center;
+
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+//     url("../assets/bg-parallax.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .stockm {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-evenly;
+//   align-items: flex-start;
+//   width: 50%;
+//   gap: 25px 0;
+//   font-size: 19px;
+//   color: rgba(255, 255, 255, 0.9);
+
+//   &__title {
+//     letter-spacing: 3px;
+//     text-transform: uppercase;
+//   }
+
+//   &__text {
+//     font-size: 15px;
+//     padding-right: 45px;
+//   }
+
+//   &__image img {
+//     margin-top: -90px;
+//   }
+
+//   &__more-btn {
+//     height: 40px;
+//     font-size: 13px;
+//     letter-spacing: 1px;
+//     width: 30%;
+//     padding: 0;
+//     border-radius: 3px;
+//     color: #000;
+//     font-weight: 400;
+//     background-color: rgba(255, 255, 255, 0.9);
+//     border: none;
+
+//     &:hover {
+//       background-color: #fff;
+//       color: #000;
+//     }
+
+//     &:active {
+//       transform: scale(0.97);
+//     }
+//   }
+// }
+
+.divider-stockm-white {
+  min-height: 450px;
   width: 100%;
-  padding: 50px 20px;
-  background-color: #f8f8f8;
+  padding: 0 5% 0 7%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #fff;
+}
+
+.stockm-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 40%;
+  gap: 25px 0;
+  font-size: 18px;
+  color: #000;
 
   &__title {
-    margin: 0 auto;
-    width: 65%;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
+    font-size: 19px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    width: 70%;
+    color: #383838;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  &__image {
+    width: 60%;
+    margin-right: 120px;
+  }
+
+  &__image img {
+    max-width: 600px;
+  }
+
+  &__more-btn {
+    height: 32px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    width: 50%;
+    padding: 0;
+    border-radius: 3px;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid #222;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
   }
 }
 
@@ -295,8 +414,8 @@
   &__title-wrap {
     width: 100%;
     padding: 25px 0;
-    background-color: #000;
     color: #fff;
+    background-color: #000;
   }
 
   &__title {
@@ -361,66 +480,17 @@
   }
 }
 
-// .divider-stockm {
-//   min-height: 450px;
-//   width: 100%;
-//   padding: 0 15%;
+.section-title {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../assets/bg-parallax2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-
-//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-//     url("../assets/bg-parallax.jpg");
-//   background-attachment: fixed;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-// .stockm {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: flex-start;
-//   width: 50%;
-//   gap: 25px 0;
-//   font-size: 19px;
-//   color: rgba(255, 255, 255, 0.9);
-
-//   &__title {
-//     letter-spacing: 3px;
-//     text-transform: uppercase;
-//   }
-
-//   &__text {
-//     font-size: 15px;
-//   }
-
-//   &__image img {
-//     margin-top: -90px;
-//   }
-
-//   &__more-btn {
-//     height: 40px;
-//     font-size: 13px;
-//     letter-spacing: 1px;
-//     width: 30%;
-//     padding: 0;
-//     border-radius: 3px;
-//     color: #000;
-//     font-weight: 400;
-//     background-color: rgba(255, 255, 255, 0.9);
-//     border: none;
-
-//     &:hover {
-//       background-color: #fff;
-//       color: #000;
-//     }
-
-//     &:active {
-//       transform: scale(0.97);
-//     }
-//   }
-// }
+    &__title {
+      margin: 0;
+      padding-left: 5%;
+      text-align: left;
+    }
+}
