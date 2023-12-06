@@ -384,7 +384,7 @@
   line-height: 1.6;
 
   &__text-wrap {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -417,15 +417,19 @@
 
   &__content-wrap {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
   &__item {
-    width: 30%;
+    width: 40%;
+  }
+
+  &__item:last-of-type {
+    width: 49%;
   }
 
   &__progress-bar {
