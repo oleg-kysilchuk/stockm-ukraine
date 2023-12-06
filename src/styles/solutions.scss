@@ -178,11 +178,6 @@
     text-align: justify;
     text-indent: 40px;
     margin-bottom: 15px;
-
-    &:last-of-type {
-      font-weight: 400;
-      font-style: italic;
-    }
   }
 
   @media (max-width: 991px) {
@@ -196,20 +191,11 @@
       font-size: 20px;
     }
   }
-
-  &__link {
-    display: block;
-    text-align: center;
-    margin: 20px auto 0;
-    font-size: 13px;
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
 }
 
 .divider-stockm {
   min-height: 380px;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 44px);
   width: 100%;
   padding: 0 14% 30px;
 
@@ -246,13 +232,12 @@
 
   &__image img {
     max-height: 380px;
-    margin-top: -100px;
   }
 
   &__title {
     margin: 0 auto;
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
   }
@@ -390,6 +375,91 @@
   }
 }
 
+.section-progress {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 20px 80px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+
+  &__text-wrap {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  &__text-left {
+    font-size: 17px;
+    letter-spacing: 3px;
+  }
+
+  &__link {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #999;
+    vertical-align: baseline;
+
+    &:hover {
+      color: #000;
+    }
+
+    i {
+      font-size: 10px;
+    }
+  }
+
+  &__content-wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 30%;
+  }
+
+  &__progress-bar {
+    margin-top: 10px;
+    margin-bottom: 49px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    overflow: visible;
+    height: 2px;
+    background: #f0f0f0;
+  }
+
+  &__bar {
+    height: 2px;
+    padding-top: 2px;
+    position: relative;
+    overflow: visible;
+    background-color: #222;
+    font-size: 10px;
+    color: #000;
+    text-align: left;
+
+    span {
+      position: relative;
+      top: 10px;
+      white-space: nowrap;
+    }
+  }
+  
+  &__text {
+  }
+}
+
 .divider-white {
   width: 100%;
   padding: 35px 15px;
@@ -433,17 +503,22 @@
 
   &__subtitle {
     margin: 40px auto 10px;
-    width: 65%;
+    width: 90%;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   &__text-block {
     max-width: 50%;
+
+    &:last-of-type {
+      max-width: 100%;
+    }
   }
 
   &__item-title {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
     margin-bottom: 20px;
   }
 
@@ -457,7 +532,7 @@
   }
 
   &__item-text {
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
   }
 
@@ -482,15 +557,72 @@
 
 .section-title {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("../assets/bg-parallax2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    url("../assets/bg-parallax2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 125px;
+
+  &__title {
+    margin: 0;
+    padding-left: 5%;
+    text-align: left;
+  }
+}
+
+.order-presentation-contact {
+  width: 100%;
+  background-color: #111;
+  padding: 40px 0;
+  text-align: center;
+
+  &__title {
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    padding: 9px 0px 0;
+    width: 235px;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(17, 17, 17, 0.7);
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 25px 15px;
 
     &__title {
-      margin: 0;
-      padding-left: 5%;
-      text-align: left;
+      font-size: 16px;
+      margin-bottom: 15px;
     }
+  }
+
+  @media (min-width: 992px) and (max-width: 1720px) {
+    &__title {
+      font-size: 16px;
+    }
+
+    &__link {
+      padding: 5px 0px 0;
+      width: 180px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
 }
