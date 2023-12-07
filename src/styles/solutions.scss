@@ -460,7 +460,12 @@
     width: 100%;
     padding: 25px 0;
     color: #fff;
-    background-color: #000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/bg-parallax2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
   &__title {
@@ -506,7 +511,6 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 1.6;
-    text-align: justify;
   }
 
   &__item-image {
@@ -530,7 +534,7 @@
 
 .section-title {
   height: calc(100vh - 36px);
-  padding: 20px 20px 120px 80px;
+  padding: 20px 20px 70px 80px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -545,14 +549,30 @@
 
   &__title {
     width: 100%;
-    margin: 0;
+    margin-bottom: 10%;
     text-align: left;
   }
 
   &__text {
     width: 100%;
     font-size: 26px;
+    margin-bottom: 10%;
   }
+
+  &__text:last-of-type {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+.section-title-orders {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/bg-parallax-orders.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
 }
 
 .order-presentation-contact {
@@ -609,4 +629,8 @@
       font-size: 12px;
     }
   }
+}
+
+strong {
+  font-weight: 500;
 }
