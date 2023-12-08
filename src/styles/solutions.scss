@@ -212,7 +212,7 @@
 .divider-stockm {
   min-height: 450px;
   width: 100%;
-  padding: 0 8%;
+  padding: 0 4%;
 
   display: flex;
   flex-direction: row;
@@ -238,7 +238,7 @@
   color: rgba(255, 255, 255, 0.9);
 
   &__title {
-    width: 90%;
+    width: 85%;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -246,8 +246,7 @@
   }
 
   &__text {
-    width: 85%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
   }
