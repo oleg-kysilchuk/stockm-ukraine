@@ -99,10 +99,10 @@
               Управління<br />
               асортиментом
             </a>
-            <a href="#" class="solutions-home__button btn">
+            <a href="#ordering" class="solutions-home__button btn">
               Автозамовлення та контроль
             </a>
-            <a href="#" class="solutions-home__button btn">
+            <a href="#analytics" class="solutions-home__button btn">
               Аналітика<br />
               та звіти
             </a>
@@ -247,7 +247,7 @@
         <div class="section-progress__content-wrap section-progress__wrap">
           <div class="section-progress__item">
             <div class="section-progress__progress-bar">
-              <div class="section-progress__bar" style="width: 50%;">
+              <div class="section-progress__bar" style="width: 75%;">
                 <span>збільшує оборотність товарів в 2-3 рази</span>
               </div>
             </div>
@@ -318,6 +318,12 @@
             src="../assets/solutions-images/buffer.png"
             alt="image"
           />
+        </div>
+
+        <div class="automatization__conclusion">
+          <p class="automatization__conclusion-text">
+            Для кожного товару щоденно розраховується максимально допустимий рівень запасу.
+          </p>
         </div>
 
         <div class="automatization__item">
@@ -465,17 +471,148 @@
       <section class="order-presentation-contact">
         <h2 class="order-presentation-contact__title">Замовити презентацію</h2>
         <a href="./pages/contact.html" class="order-presentation-contact__link btn">Замовити</a>
+        <div id="ordering"></div>
       </section>
 
       <section class="automatization">
         <div class="automatization__title-wrap section-title section-title-orders">
             <h2 class="automatization__title section-title__title">Автозамовлення та контроль</h2>
-            <p class="section-title__text">Для кожного товару щоденно розраховується максимально допустимий рівень запасу. <br />
-              Максимальний рівень замовлення – значення, яке є різницею між буфером, залишком товару і кількість товару, що надходить 
+            <p class="section-title__text">Максимальний рівень замовлення – значення, яке є різницею між буфером, <br />залишком товару і кількість товару, що надходить 
               </p>
             <p class="section-title__text"><span>Якщо замовлення робить менеджер, а не система, як ви розумієте, що замовлення зроблено</span><br /> ПРАВИЛЬНО, ВЧАСНО І В НЕОБХІДНІЙ КІЛЬКОСТІ ?</p>
         </div>
+
         <div class="automatization__item">
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              Менеджер не може точно розрахувати, скільки потрібно замовити, адже неможливо проаналізувати весь асортимент і розрахувати потребу по кожному sku. Як це робить система?
+            </p>
+            <p class="automatization__item-text">
+              Система щодня аналізує потребу в товарах відповідно до руху залишків у реальному часі, враховуючи залишки на складі, партію замовлення, терміни та умови постачання, формує замовлення автоматично, надсилає постачальнику та фіксує відповідність щодо надходження замовленого товару та кількості. <br/>
+              <strong>Точність замовлення забезпечить постійну наявність ходових товарів і попередить замовлення надлишкових запасів</strong>
+            </p>
+          </div>
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering1.png"
+            alt="image"
+          />
+        </div>
+
+        <div class="automatization__item">
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering2.png"
+            alt="image"
+          />
+
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              Система автоматично замовляє товари, які постійно повинні бути на складі чи полиці магазину. Як в замовлення потрапить товар, який потрібно привезти під замовлення клієнта?
+            </p>
+            <p class="automatization__item-text">
+              В <strong>Stock-M</strong> розроблено механізм, де система отримує інформацію про додаткове замовлення клієнта автоматично, такі товари мають статус товару “під замовлення” (DTO) – товари, які знаходяться в асортименті, але їх наявність на складі системою не підтримується. <br />
+              Якщо залишку на складі не достатньо, щоб задовільнити запит клієнта, таке замовлення клієнта автоматично потрапляє в замовлення, яке надсилається постачальнику. <br />
+              <strong>Система допомагає підтримувати залишки ходового товару, не тримати на складі товари, які мало користуються попитом, але вчасно і в автоматичному режимі замовити товари, які замовив клієнт.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="automatization__item">
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              Хоч рівень запасу оптимальний на складі, часто не вистачає товару, коли отримуємо великі замовлення, так звані тендери. Як <strong>Stock-M</strong> розуміє, що це разове замовлення? Чи не збільшить рівень запасу і запропонує замовити наступного разу більшу кількість товару?
+            </p>
+            <p class="automatization__item-text">
+              Рівень запасу на складі аналізується щодня по кодному sku в кожній точці продажу та зберігання, значення розраховується та змінюється в певний визначений період. Система розуміє що це є так звані “ піки” продаж та не враховує їх в розрахунку рівня запасу на складі. <br/>
+              Отже, наступне замовлення буде сформоване по sku, які потрібно замовити, відповідно до їх значенню буфера та решти параметрів. <br/>
+              <strong>Розумне рішення Stock-M забеспечить Вам точність замовлення, попередить закупку надлишково запасу на склад чи магазин при виникнені пікових продаж</strong>
+            </p>
+          </div>
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering3.png"
+            alt="image"
+          />
+        </div>
+
+        <div class="automatization__item">
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering4.png"
+            alt="image"
+          />
+
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              Часто буває, що замовлення потрібно сформувати так, щоб воно було певного об’єму, оскільки не вигідно використовувати наполовину завантаженений транспорт. Як сформувати замовлення так, щоб замовлення відповідало об’єму транспорту?
+            </p>
+            <p class="automatization__item-text">
+              <strong>Stock-M</strong> має розроблений механізм оптимінізації замовлень по об’єму, вазі, або сумі, на яку потрібно замовити товар. Параметри оптимізації можна налаштувати в системі для кожного постачальника, а також суто для конкретного замовлення. Якщо замовлення потрібно збільшити, автоматичо доповнить товарами, які швидко продаються, а якщо зменшити, оптимізує товари, які рухаються повільно і приносять меньше прибутку компанії. <br />
+              <strong>Таким чином, не потрібно відслідковувати, якого розміру чи на яку суму буде замовлення, адже система розуміє, що замовити, скільки і коли замовити, щоб ви отримали оптимальне замовлення згідно параметрів оптимізації.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="automatization__item">
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              У нас декілька постачальників однакового товару і часто приходиться обирати, кому надіслати замовлення. Як замовити товар у постачальника, який не є основним?
+            </p>
+            <p class="automatization__item-text">
+              Замовлення в системі формується автоматично на основного постачальника. Якщо потрібно відправити замовлення альтернативному постачальнику, потрібно просто змінити одного постачальника на іншого і відправити замовлення. Так можна швидко перенаправити замовлення, якщо у основного постачальника товар відсутній або не дуже вигідна ціна. <br/>
+              <strong>З допомогою Stock-M легко впорядкувати роботу з великою кількістю постачальників, працювати з замовленнями та швидко приймати рішення</strong>
+            </p>
+          </div>
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering5.png"
+            alt="image"
+          />
+        </div>
+
+        <div class="automatization__item">
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering6.png"
+            alt="image"
+          />
+
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              У постачальника кожен менеджер працює зі своєю групою товару. Як зробити окреме замовлення на певну групу товару?
+            </p>
+            <p class="automatization__item-text">
+              В системі є критерії, які відносять товар до певної групи товарів. Згідно цих критеріїв, <strong>Stock-M</strong> може формувати замовлення на конкретні групи товарів, щоб надіслати їх певним постачальникам чи окремим менеджерам постачальника, які відповідають за дану групу. <br />
+              <strong>Таким чином, система автоматично формує замовлення в потрібному форматі, що дозволяє вам економити час на формування замовлень по групах товарів</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="automatization__item">
+          <div class="automatization__text-block">
+            <p class="automatization__item-title">
+              Ми часто не розуміємо, коли надійде замовлення і в якій кількості. Як зрозуміти, чи надійшли замовлені товари в потрібній кількості і чи вчасно замовлення було виконане?
+            </p>
+            <p class="automatization__item-text">
+              Завдяки автоматичній реєстрації прибуття замовлених товарів в <strong>Stock-M</strong>, не потрібно відслідковувати їх вручну. Прибуття товару реєструється, коли товар потрапляє на склад. Отже, система сигналізує про кількість товару, який не надійшов на склад та про замовлення, які затримуються в дорозі. <br/>
+              <strong>Вам не потрібно витрачати час на аналіз, щоб зрозуміти, чи надійли всі товари згідно замовлень та на контроль за невчасним надходженням замовлень - Stock-M зробить це за вас.</strong>
+            </p>
+          </div>
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/ordering7.png"
+            alt="image"
+          />
+        </div>
+
+        <div class="automatization__item">
+          <img
+            class="automatization__item-image"
+            src="../assets/solutions-images/assortment5.png"
+            alt="image"
+          />
+
           <div class="automatization__text-block">
             <p class="automatization__item-title">
               Як зменшити кількість списання товарів,  які мають короткий термін зберігання?
@@ -485,13 +622,8 @@
               Управління за допомогою <strong>Stock-M</strong> зменьшує кількість списань, оскільки щоденно слідкує за тим, як змінюється попит і щодня реагує на зміни та дає рекомендації, яку кількість sku потрібно виготовити або купити, щоб вистачило для продажі і не створити надлишковий запас
             </p>
           </div>
-
-          <img
-            class="automatization__item-image"
-            src="../assets/solutions-images/assortment5.png"
-            alt="image"
-          />
         </div>
+        <div id="analytics"></div>
       </section>
 
       <section class="automatization">
