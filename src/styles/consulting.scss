@@ -1,6 +1,45 @@
 @import "../libs/reset";
 @import "./util";
 
+.consulting-home {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px 0px;
+
+  background: linear-gradient(0deg, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3)),
+    url('../assets/conslting-bg.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 25px;
+    opacity: 0.9;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.4;
+  }
+}
+
 .consulting-services {
   width: 100%;
   height: 100%;
