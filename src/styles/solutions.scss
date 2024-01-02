@@ -525,6 +525,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #333;
+    line-height: 1.2;
   }
 
   &__item-title {
@@ -576,7 +577,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  gap: 100px 0px;
+  gap: 35% 0px;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/bg-parallax-stock.jpg");
@@ -593,14 +594,9 @@
 
   &__text {
     width: 100%;
-    font-size: 22px;
-  }
-
-  &__text:last-of-type {
-    font-size: 26px;
-    text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
+    font-size: 26px;
   }
 }
 
@@ -622,6 +618,15 @@
 .section-title-analytics {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/bg-parallax-analytics.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-title-promotions {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/bg-parallax-promotions.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
