@@ -19,13 +19,3 @@ closeBtn.addEventListener("click", hideMobileNav);
 mobLinks.forEach(function (link) {
   link.addEventListener("click", hideMobileNav);
 });
-
-// baguettebox.run(".presentation", {
-//   captions: false,
-//   ignoreClass: 'gallery-button'
-// });
-
-// const galleryLinks = [...document.querySelectorAll(".presentation a")];
-// const changedHref = galleryLinks.map((a) => {
-//   a.href = a.children[0].src;
-// });
