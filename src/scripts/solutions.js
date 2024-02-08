@@ -1,6 +1,5 @@
 import "../pages/solutions.html";
 import "../styles/solutions.scss";
-import baguettebox from "../modules/baguetteBox.min.js";
 import {
   highlightActivePage,
   links,
@@ -21,12 +20,12 @@ mobLinks.forEach(function (link) {
   link.addEventListener("click", hideMobileNav);
 });
 
-baguettebox.run(".presentation", {
-  captions: false,
-  ignoreClass: 'gallery-button'
-});
+// baguettebox.run(".presentation", {
+//   captions: false,
+//   ignoreClass: 'gallery-button'
+// });
 
-const galleryLinks = [...document.querySelectorAll(".presentation a")];
-const changedHref = galleryLinks.map((a) => {
-  a.href = a.children[0].src;
-});
+// const galleryLinks = [...document.querySelectorAll(".presentation a")];
+// const changedHref = galleryLinks.map((a) => {
+//   a.href = a.children[0].src;
+// });

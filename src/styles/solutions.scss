@@ -252,21 +252,8 @@
     letter-spacing: 1px;
   }
 
-  &__image {
-    position: relative;
-  }
-
   &__monitor {
     margin-top: -70px;
-  }
-
-  &__play-icon {
-    position: absolute;
-    top: 75.5%;
-    left: 50%;
-    width: 24px;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
 
   // &__more-btn {
@@ -576,7 +563,7 @@
 
   &__conclusion-text {
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
