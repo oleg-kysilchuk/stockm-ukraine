@@ -197,11 +197,13 @@
 
   &__block-image {
     position: relative;
+    padding-top: 7%;
     width: 33%;
+    align-self: flex-start;
   }
 
   &__image {
-    width: 85%;
+    width: 87%;
   }
 
   @media (max-width: 991px) {
@@ -221,10 +223,6 @@
 
     &__item-text {
       font-size: 13px;
-    }
-
-    &__block-image {
-      display: none;
     }
   }
 
@@ -252,10 +250,10 @@ p.problems__item-text:nth-of-type(2n) {
 
 .swiper {
   width: 330px;
-  height: 68%;
+  height: 52%;
   overflow-y: hidden;
   position: absolute;
-  top: 41.5%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

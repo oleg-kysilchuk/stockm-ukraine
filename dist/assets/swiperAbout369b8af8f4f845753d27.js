@@ -1,0 +1,1 @@
+const swiper=new Swiper(".swiper",{speed:1e3,loop:!0,spaceBetween:30,sliderPerView:1,direction:"vertical",draggable:!0});
