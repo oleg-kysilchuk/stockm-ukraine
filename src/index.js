@@ -1,6 +1,6 @@
 import "./index.html";
 import "./index.scss";
-import { swiper } from "./modules/swiper"; ///????????????
+import { swiper } from "./modules/swiper";
 import { highlightActivePage, links, showMobileNav, hideMobileNav } from "./modules/util";
 
 links.forEach(link => highlightActivePage(link));

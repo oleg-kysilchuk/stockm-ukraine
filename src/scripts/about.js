@@ -22,5 +22,5 @@ mobLinks.forEach(function (link) {
 
 const galleryLinks = [...document.querySelectorAll("a[data-fslightbox='gallery']")];
 const changedHref = galleryLinks.map((a) => {
-  a.href = a.children[0].src;
+  a.href = a.children[0].src;        ///////////////////////////// DELETE THIS BEFORE LOAD ON HOSTING!!!!!!
 });
