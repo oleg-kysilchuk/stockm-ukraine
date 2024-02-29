@@ -51,6 +51,38 @@
     letter-spacing: 1px;
     border-radius: 8px;
   }
+
+  @media (max-width: 991px) {
+    padding-top: 70%;
+    background-position-y: 0px;
+
+    &__content {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__button {
+      width: 55%;
+      height: 42px;
+      padding-top: 5px;
+      font-size: 11px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1720px) {
+  }
+
+  @media (min-width: 1800px) {
+  }
 }
 
 .solutions-tabs {
@@ -133,16 +165,29 @@
   &__tab-link {
     padding: 5px 25px;
     border: 1px solid;
-    border-color: #e9ecef #e9ecef #dee2e6;
-    color: #777;
+    border-color: #222;
+    color: #222;
     border-radius: 20px;
     text-transform: capitalize;
     transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
 
     &:hover,
     &:focus {
-      border-color: #222;
-      color: #222;
+      border-color: #e9ecef #e9ecef #dee2e6;
+      color: #777;
+    }
+  }
+
+  @media (max-width: 991px) {
+    width: 90%;
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    &__tab-label {
+      margin-bottom: 10px;
     }
   }
 }
@@ -175,6 +220,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 991px) {
+    height: 100vh;
+    flex-direction: column;
+  }
 }
 
 .stockm {
@@ -205,27 +255,21 @@
     margin-top: -70px;
   }
 
-  // &__more-btn {
-  //   height: 40px;
-  //   font-size: 13px;
-  //   letter-spacing: 1px;
-  //   width: 30%;
-  //   padding: 0;
-  //   border-radius: 3px;
-  //   color: #000;
-  //   font-weight: 400;
-  //   background-color: rgba(255, 255, 255, 0.9);
-  //   border: none;
+  @media (max-width: 991px) {
+    width: 95%;
 
-  //   &:hover {
-  //     background-color: #fff;
-  //     color: #000;
-  //   }
+    &__title {
+      margin-bottom: 50px;
+    }
 
-  //   &:active {
-  //     transform: scale(0.97);
-  //   }
-  // }
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__monitor {
+      margin-top: 0;
+    }
+  }
 }
 
 .divider-stockm-white {
@@ -239,6 +283,11 @@
   align-items: center;
 
   background-color: #fff;
+
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+    padding: 50px 20px 20px;
+  }
 }
 
 .stockm-white {
@@ -294,6 +343,28 @@
       transform: scale(0.97);
     }
   }
+
+  @media (max-width: 991px) {
+    width: 100%;
+
+    &__text {
+      width: 80%;
+      font-size: 15px;
+    }
+
+    &__more-btn {
+      margin-bottom: 20px;
+    }
+
+    &__image {
+      width: 100%;
+      margin-right: 0;
+
+      img {
+        max-width: 370px;
+      }
+    }
+  }
 }
 
 .section-progress {
@@ -331,15 +402,20 @@
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: 400;
-    color: #999;
+    color: #111;
     vertical-align: baseline;
 
     &:hover {
-      color: #000;
+      color: #999;
+
+      i.fa-angle-right {
+        color: #999;
+      }
     }
 
-    i {
-      font-size: 10px;
+    i.fa-angle-right {
+      font-size: 11px;
+      color: #111;
     }
   }
 
@@ -407,7 +483,7 @@
   }
 
   &__counters-text,
-  i {
+  i.progress-bar-icon {
     font-size: 13px;
     color: #999;
     text-transform: uppercase;
@@ -514,6 +590,39 @@
     font-weight: 500;
     font-style: italic;
   }
+
+  @media (max-width: 991px) {
+    &__title {
+      width: 95%;
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    &__item {
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px 20px;
+    }
+
+    &__text-block {
+      width: 100%;
+      order: 1;
+    }
+
+    &__item-image {
+      max-width: 100%;
+      order: 2;
+    }
+
+    &__conclusion-text {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
 }
 
 .section-title {
@@ -543,6 +652,14 @@
     margin: 0 auto;
     text-align: center;
     font-size: 26px;
+  }
+
+  @media (max-width: 991px) {
+    padding-left: 30px;
+
+    &__text {
+      font-size: 24px;
+    }
   }
 }
 
@@ -638,7 +755,6 @@
 strong {
   font-weight: 500;
 }
-
 
 .filler {
   width: 100%;
