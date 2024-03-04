@@ -21,19 +21,35 @@
   background-size: cover;
 
   &__title {
+    width: 80%;
     font-size: 30px;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
   }
 
   &__subtitle {
     font-size: 14px;
     letter-spacing: 2px;
   }
+
+  @media (max-width: 991px) {
+    padding-left: 25px;
+
+    &__title {
+      width: 100%;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+  }
 }
 
 .clients {
   width: 100%;
-  padding: 110px 20px 50px;
+  padding: 0px 20px 50px;
   text-align: center;
 
   &__title {
