@@ -15,14 +15,15 @@
   height: 236px;
   padding-left: 10%;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)), url('../assets/projects-bg.jpg');
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)),
+    url("../assets/projects-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   &__title {
     font-size: 30px;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
   }
 
   &__subtitle {
@@ -31,9 +32,32 @@
   }
 }
 
+.projects-description {
+  width: 100%;
+  padding: 70px 20px;
+  text-align: center;
+  color:#111;
+  background-color: #f8f8f8;
+
+  &__title {
+    margin: 0 auto;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
 .projects-tabs {
   width: 100%;
-  padding-top: 120px;
+  padding-top: 70px;
   margin: 0 auto;
 
   @media (max-width: 991px) {
@@ -125,7 +149,7 @@
     max-height: 450px;
     color: #777;
     background: rgba(255, 255, 255, 0.93);
-    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
     opacity: 0;
 
     span {
@@ -154,7 +178,7 @@
   opacity: 1;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
 }
 
 .tabs__tab-input:checked + label.tabs__tab-label {
@@ -170,7 +194,7 @@
   transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
 
   @media (max-width: 991px) {
-    width: 75%;
+    width: 95%;
     flex-direction: column;
     gap: 25px 0px;
   }

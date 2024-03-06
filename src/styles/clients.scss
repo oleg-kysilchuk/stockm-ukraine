@@ -21,7 +21,6 @@
   background-size: cover;
 
   &__title {
-    width: 80%;
     font-size: 30px;
     letter-spacing: 7px;
   }
@@ -35,9 +34,9 @@
     padding-left: 25px;
 
     &__title {
-      width: 100%;
       font-size: 15px;
       letter-spacing: 0;
+      line-height: 1.4;
     }
 
     &__subtitle {
