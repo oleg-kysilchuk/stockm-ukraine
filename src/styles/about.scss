@@ -12,6 +12,8 @@
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
   }
 }
 
@@ -300,6 +302,7 @@ p.problems__item-text:nth-of-type(2n) {
   background-color: #f8f8f8;
 
   &__title {
+    width: 65%;
     margin: 0 auto;
     font-size: 24px;
     letter-spacing: 3px;
@@ -312,6 +315,19 @@ p.problems__item-text:nth-of-type(2n) {
     margin: 0 auto;
     font-size: 15px;
     line-height: 1.5;
+  }
+
+  &__title-reverted {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  &__text-reverted {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }
 
