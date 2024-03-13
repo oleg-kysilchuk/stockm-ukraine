@@ -24,3 +24,28 @@ const galleryLinks = [...document.querySelectorAll("a[data-fslightbox='gallery']
 const changedHref = galleryLinks.map((a) => {
   a.href = a.children[0].src;        ///////////////////////////// DELETE THIS BEFORE LOAD ON HOSTING!!!!!!
 });
+
+function toggleAccordion() {
+  accordionItems.forEach(i => {
+    i.classList.remove('active')
+  })
+  this.classList.toggle('active');
+}
+
+const accordionItems = document.querySelectorAll('.accordion__item');
+accordionItems.forEach(i => {
+  i.addEventListener('click', toggleAccordion)
+})
+
+$(document).ready(function(){
+
+  // link action
+  $(".action").click(function(e){
+      e.preventDefault();
+
+      $(".slide").removeClass("active");
+      var slide = $(this).closest(".slide");
+      slide.addClass("active");
+  });
+
+});
