@@ -271,7 +271,7 @@ p.problems__item-text:nth-of-type(2n) {
 
 .separator {
   width: 100%;
-  padding: 38px 20px 38px 10%;
+  padding: 27px 20px 27px 10%;
   text-align: left;
   color: #fff;
   background-color: #252525;
@@ -282,7 +282,7 @@ p.problems__item-text:nth-of-type(2n) {
     max-width: 1536px;
     font-size: 24px;
     letter-spacing: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__text {
@@ -396,6 +396,7 @@ p.problems__item-text:nth-of-type(2n) {
   max-width: 1536px;
   margin: 0px auto 0;
   padding: 0px;
+  background-color: #ececec;
 }
 
 .slides {
@@ -409,7 +410,7 @@ p.problems__item-text:nth-of-type(2n) {
 }
 .slide {
   list-style-type: none;
-  height: 420px;
+  height: 450px;
   width: 5%;
   overflow: hidden;
   transition: all 500ms linear;
@@ -432,11 +433,11 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .brand1.active {
-  background-image: url("../assets/problems-scheme-1.png");
+  background-image: url("../assets/problems-scheme-2.png");
 }
 
 .brand2.active {
-  background-image: url("../assets/problems-scheme-2.png");
+  background-image: url("../assets/problems-scheme-1.png");
 }
 
 .slide a.action {
@@ -445,16 +446,17 @@ p.problems__item-text:nth-of-type(2n) {
   position: relative;
 }
 .slide a.action span {
-  font-weight: 500;
-  color: #111;
-  transform: rotate(270deg);
-  position: absolute;
-  top: 20%;
-  width: 180px;
-  left: -25%;
-  height: 100px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  font-weight: 400;
+    font-size: 14px;
+    color: #111;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 25%;
+    width: 250px;
+    left: -75%;
+    height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .slide-content {
   display: flex;
