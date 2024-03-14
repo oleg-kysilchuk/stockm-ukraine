@@ -399,6 +399,14 @@ p.problems__item-text:nth-of-type(2n) {
   background-color: #ccc;
 }
 
+.container2 {
+  background-color: #ececec;
+}
+
+.container2 .slides {
+  justify-content: flex-start;
+}
+
 .slides {
   margin: 0 auto;
   width: 100%;
@@ -408,6 +416,7 @@ p.problems__item-text:nth-of-type(2n) {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .slide {
   list-style-type: none;
   height: 450px;
