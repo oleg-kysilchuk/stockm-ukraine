@@ -39,7 +39,6 @@ accordionItems.forEach(i => {
 
 $(document).ready(function(){
 
-  // link action
   $(".action").click(function(e){
       e.preventDefault();
 
@@ -47,5 +46,13 @@ $(document).ready(function(){
       var slide = $(this).closest(".slide");
       slide.addClass("active");
   });
+
+  $(".action2").click(function(e){
+    e.preventDefault();
+
+    $(".slide2").removeClass("active2");
+    var slide = $(this).closest(".slide2");
+    slide.addClass("active2");
+});
 
 });
