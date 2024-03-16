@@ -278,7 +278,6 @@ p.problems__item-text:nth-of-type(2n) {
   text-transform: uppercase;
 
   &__title {
-    margin: 0 auto;
     max-width: 1536px;
     font-size: 21px;
     letter-spacing: 3px;
@@ -331,7 +330,6 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .container {
-  max-width: 1536px;
   margin: 0px auto 0;
   padding: 0px;
   background-color: #B4B4B8;
@@ -339,6 +337,11 @@ p.problems__item-text:nth-of-type(2n) {
 
 .container2 {
   background-color: #B4B4B8;
+}
+
+.container-slides {
+  max-width: 1536px;
+  margin: 0 auto;
 }
 
 .container2 .slides {
