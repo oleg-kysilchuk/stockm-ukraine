@@ -349,7 +349,7 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .container2 .brand1 {
-  background-color: #E3E1D9;
+  background-color: #dedede;
 }
 
 .container2 .brand3 {
@@ -363,7 +363,6 @@ p.problems__item-text:nth-of-type(2n) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -377,7 +376,6 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .brand1 {
-  border-radius: 10px 0 0 10px;
   background-color: #B4B4B8;
   background-repeat: no-repeat;
   background-size: contain;
@@ -385,7 +383,6 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .brand2 {
-  border-radius: 0px 10px 10px 0px;
   background-color: #C7C8CC;
   background-repeat: no-repeat;
   background-size: contain;
@@ -393,8 +390,7 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .brand3 {
-  border-radius: 0px 10px 10px 0px;
-  background-color: #E3E1D9;
+  background-color: #dedede;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -476,6 +472,11 @@ p.problems__item-text:nth-of-type(2n) {
 .active a.action,
 .active2 a.action2 {
   display: none;
+}
+
+hr {
+  height: 3px;
+  background-color: #dedede;
 }
 
 .divider-stockm-white {
