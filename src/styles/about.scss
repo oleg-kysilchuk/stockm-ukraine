@@ -330,13 +330,8 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .container {
-  margin: 0px auto 0;
+  margin: 0px auto;
   padding: 0px;
-  background-color: #B4B4B8;
-}
-
-.container2 {
-  background-color: #B4B4B8;
 }
 
 .container-slides {
@@ -344,93 +339,89 @@ p.problems__item-text:nth-of-type(2n) {
   margin: 0 auto;
 }
 
-.container2 .slides {
-  justify-content: flex-start;
-}
-
-.container2 .brand1 {
-  background-color: #dedede;
-}
-
-.container2 .brand3 {
-  background-color: #B4B4B8;
-}
-
-
 .slides {
   margin: 0 auto;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
+  justify-content: center;
 }
 
 .slide,
-.slide2 {
+.slide2,
+.slide3,
+.slide4 {
   list-style-type: none;
   height: 470px;
   width: 5%;
   overflow: hidden;
   transition: all 500ms linear;
-}
-
-.brand1 {
-  background-color: #B4B4B8;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-}
-
-.brand2 {
-  background-color: #C7C8CC;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-}
-
-.brand3 {
-  background-color: #dedede;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   background-position: right;
 }
 
 .brand1.active,
-.brand1.active2 {
+.brand1.active2,
+.brand1.active3,
+.brand1.active4 {
   background-image: url("../assets/problems-scheme-2.png");
 }
 
 .brand2.active,
-.brand2.active2 {
+.brand2.active2,
+.brand2.active3,
+.brand2.active4 {
   background-image: url("../assets/problems-scheme-1.png");
 }
 
 .brand3.active,
-.brand3.active3 {
+.brand3.active2,
+.brand3.active3,
+.brand3.active4 {
   background-image: url("../assets/problems-scheme-1.png");
 }
 
 .slide a.action,
-.slide2 a.action2 {
+.slide2 a.action2,
+.slide3 a.action3,
+.slide4 a.action4 {
   display: block;
   height: 100%;
   position: relative;
 }
+
 .slide a.action span,
-.slide2 a.action2 span {
+.slide2 a.action2 span,
+.slide3 a.action3 span,
+.slide4 a.action4 span {
   font-weight: 400;
-    font-size: 14px;
-    color: #111;
-    transform: rotate(270deg);
-    position: absolute;
-    top: 25%;
-    width: 250px;
-    left: -75%;
-    height: 100px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 14px;
+  color: #111;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 25%;
+  width: 250px;
+  left: -75%;
+  height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+          text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: -webkit-text-decoration-color 500ms;
+  transition: text-decoration-color 500ms;
+  transition: text-decoration-color 500ms, -webkit-text-decoration-color 500ms;
+
 }
+
+.slide a.action:hover span,
+.slide2 a.action2:hover span,
+.slide3 a.action3:hover span,
+.slide4 a.action4:hover span {
+  -webkit-text-decoration-color: rgba(0, 0, 0, 1);
+          text-decoration-color: rgba(0, 0, 0, 1);
+}
+
 .slide-content {
   display: flex;
   flex-direction: column;
@@ -466,11 +457,15 @@ p.problems__item-text:nth-of-type(2n) {
 }
 
 .active,
-.active2 {
-  width: 80%;
+.active2,
+.active3,
+.active4 {
+  width: 75%;
 }
 .active a.action,
-.active2 a.action2 {
+.active2 a.action2,
+.active3 a.action3,
+.active4 a.action4 {
   display: none;
 }
 

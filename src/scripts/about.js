@@ -53,6 +53,22 @@ $(document).ready(function(){
     $(".slide2").removeClass("active2");
     var slide = $(this).closest(".slide2");
     slide.addClass("active2");
-});
+  });
+
+  $(".action3").click(function(e){
+    e.preventDefault();
+
+    $(".slide3").removeClass("active3");
+    var slide = $(this).closest(".slide3");
+    slide.addClass("active3");
+  });
+
+  $(".action4").click(function(e){
+    e.preventDefault();
+
+    $(".slide4").removeClass("active4");
+    var slide = $(this).closest(".slide4");
+    slide.addClass("active4");
+  });
 
 });
