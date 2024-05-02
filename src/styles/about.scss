@@ -27,11 +27,11 @@
 
   &__title {
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 36px;
+    font-weight: 400;
     letter-spacing: 3px;
   }
 }
@@ -44,7 +44,7 @@
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  top: 47%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-animation: morph 15s infinite ease-in-out;
@@ -95,35 +95,35 @@
   }
 }
 
-.about-btn {
-  position: absolute;
-  top: 58%;
-  width: 10%;
-  height: 34px;
-  padding: 5px 10px;
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.75);
-  border-radius: 2px;
-  transition: none;
+// .about-btn {
+//   position: absolute;
+//   top: 58%;
+//   width: 10%;
+//   height: 34px;
+//   padding: 5px 10px;
+//   font-size: 11px;
+//   font-weight: 400;
+//   letter-spacing: 1px;
+//   color: #fff;
+//   border: 2px solid rgba(255, 255, 255, 0.75);
+//   border-radius: 2px;
+//   transition: none;
 
-  &:hover {
-    border-color: #fff;
-    background-color: #fff;
-    color: #000;
-    transition: none;
-  }
+//   &:hover {
+//     border-color: #fff;
+//     background-color: #fff;
+//     color: #000;
+//     transition: none;
+//   }
 
-  &:first-of-type {
-    left: 38%;
-  }
+//   &:first-of-type {
+//     left: 38%;
+//   }
 
-  &:last-of-type {
-    right: 41%;
-  }
-}
+//   &:last-of-type {
+//     right: 41%;
+//   }
+// }
 
 .problems-question {
   width: 100%;
@@ -294,7 +294,7 @@ p.problems__item-text:nth-of-type(2n) {
 
 .about-description {
   width: 100%;
-  padding: 100px 20px 70px;
+  padding: 70px 20px;
   text-align: center;
   color: #111;
   background-color: #f8f8f8;
@@ -361,27 +361,6 @@ p.problems__item-text:nth-of-type(2n) {
   background-position: right;
 }
 
-.brand1.active,
-.brand1.active2,
-.brand1.active3,
-.brand1.active4 {
-  background-image: url("../assets/problems-scheme-2.png");
-}
-
-.brand2.active,
-.brand2.active2,
-.brand2.active3,
-.brand2.active4 {
-  background-image: url("../assets/problems-scheme-1.png");
-}
-
-.brand3.active,
-.brand3.active2,
-.brand3.active3,
-.brand3.active4 {
-  background-image: url("../assets/problems-scheme-1.png");
-}
-
 .slide a.action,
 .slide2 a.action2,
 .slide3 a.action3,
@@ -422,6 +401,22 @@ p.problems__item-text:nth-of-type(2n) {
           text-decoration-color: rgba(0, 0, 0, 1);
 }
 
+.slide-1-1 {
+  background-image: url('../assets/problems-scheme-1.png');
+}
+
+.slide-1-2 {
+  background-image: url('../assets/problems-scheme-2.png');
+}
+
+.slide-4-2 {
+  background-image: url('../assets/problems-scheme-8.png');
+}
+
+.slide-4-3 {
+  background-image: url('../assets/problems-scheme-7.png');
+}
+
 .slide-content {
   display: flex;
   flex-direction: column;
@@ -442,10 +437,15 @@ p.problems__item-text:nth-of-type(2n) {
 
 .slide-content > p {
   width: 50%;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.4;
   font-weight: 300;
   margin-bottom: 20px;
+}
+
+.slide-content ul {
+  font-size: 19px;
+  font-weight: 300;
 }
 
 .solutions-link {
@@ -510,6 +510,10 @@ hr {
     font-size: 19px;
     letter-spacing: 3px;
     text-transform: uppercase;
+
+    &:last-of-type {
+      color: red;
+    }
   }
 
   &__text {
