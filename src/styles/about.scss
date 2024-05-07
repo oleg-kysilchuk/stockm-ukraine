@@ -140,8 +140,9 @@
 
   &__title {
     width: 40%;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.5;
+    text-transform: uppercase;
   }
 }
 
@@ -311,8 +312,8 @@ p.problems__item-text:nth-of-type(2n) {
   &__text {
     width: 60%;
     margin: 0 auto;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.45;
   }
 
   &__title-reverted {
@@ -435,6 +436,16 @@ p.problems__item-text:nth-of-type(2n) {
   font-weight: 400;
 }
 
+.slide-content > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0px 40px;
+  margin-bottom: 20px;
+}
+
+.slide-content > div > p,
 .slide-content > p {
   width: 50%;
   font-size: 16px;
@@ -626,7 +637,7 @@ hr {
 .divider-title {
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
