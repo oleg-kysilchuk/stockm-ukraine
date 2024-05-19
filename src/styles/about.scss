@@ -391,29 +391,43 @@ p.problems__item-text:nth-of-type(2n) {
           text-decoration-color: rgba(0, 0, 0, 1);
 }
 
-.slide-1-1 {
+.slide-1-1.active {
   background-image: url('../assets/problems-scheme-1.png');
+  background-position-x: 90%;
 }
 
-.slide-1-2 {
+.slide-1-2.active {
   background-image: url('../assets/problems-scheme-2.png');
+  background-position-x: 90%;
 }
 
-.slide-2-1 {
+.slide-2-1.active2 {
   background-image: url('../assets/problems-scheme-3.png');
+  background-position-x: 95%;
 }
 
-.slide-2-2 {
+.slide-2-2.active2 {
   background-image: url('../assets/problems-scheme-4.png');
+  background-position-x: 90%;
 }
 
-.slide-4-2 {
-  background-image: url('../assets/problems-scheme-8.png');
+.slide-3-1.active3 {
+  background-image: url('../assets/problems-scheme-5.png');
+  background-position-x: 95%;
 }
 
-.slide-4-3 {
-  background-image: url('../assets/problems-scheme-7.png');
+.slide-3-2.active3 {
+  background-image: url('../assets/problems-scheme-6.png');
+  background-position-x: 95%;
 }
+
+// .slide-4-2 {
+//   background-image: url('../assets/problems-scheme-8.png');
+// }
+
+// .slide-4-3 {
+//   background-image: url('../assets/problems-scheme-7.png');
+// }
 
 .slide-content {
   display: flex;
@@ -442,18 +456,21 @@ p.problems__item-text:nth-of-type(2n) {
   margin-bottom: 20px;
 }
 
+.slide3.brand3 > .slide-content > div {
+  margin-bottom: 0;
+}
+
 .slide-content > div > p,
 .slide-content > p {
   width: 50%;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  margin-bottom: 20px;
 }
 
 .slide-content > div > p.second,
 .slide-content > p.second {
-  font-size: 20px;
+  font-size: 19px;
   font-style: italic;
   line-height: 1.65;
 }
@@ -654,4 +671,44 @@ hr {
     text-transform: uppercase;
     margin-bottom: 50px;
   }
+}
+
+.about-end-links {
+  width: 100%;
+  padding: 140px 20px;
+  background-color: #fff;
+
+  &__text {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    color: #777;
+  }
+
+  &__links-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 20px;
+  }
+
+  &__link {
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+hr.grey {
+  height: 1px;
+  color: #222;
 }
