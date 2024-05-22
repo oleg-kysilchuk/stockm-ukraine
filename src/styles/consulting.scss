@@ -262,7 +262,7 @@ i.icon {
   max-width: 1536px;
   margin: 0 auto;
   color: #777;
-  margin-bottom: 100px;
+  padding: 100px 0px;
 
   &__title {
     margin: 0 auto 70px;
@@ -623,4 +623,25 @@ p.problems__item-text:nth-of-type(2n) {
   font-weight: 500;
   font-style: italic;
   margin-bottom: 5px;
+}
+
+.section-heading {
+  width: 100%;
+  padding: 25px 0;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/bg-parallax2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
 }
