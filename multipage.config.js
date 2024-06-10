@@ -11,6 +11,7 @@ result.entry = {
   projects: path.resolve(__dirname, "src/scripts", "projects.js"),
   events: path.resolve(__dirname, "src/scripts", "events.js"),
   contact: path.resolve(__dirname, "src/scripts", "contact.js"),
+  project1: path.resolve(__dirname, "src/scripts", "project1.js"),
 };
 
 result.pages = [
@@ -53,6 +54,11 @@ result.pages = [
     chunks: ["contact"],
     page: "pages/contact.html",
     template: path.resolve(__dirname, "src", "pages/contact.html"),
+  },
+  {
+    chunks: ["project1"],
+    page: "pages/project1.html",
+    template: path.resolve(__dirname, "src", "pages/project1.html"),
   },
 ];
 
