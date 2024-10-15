@@ -1,5 +1,5 @@
 import "../pages/project-kpi.html";
-import "../styles/project-kpi.scss";
+import "../styles/project-single.scss";
 
 const problemTabs = document.querySelectorAll(".project-problems__tab-question");
 problemTabs.forEach((item) => {

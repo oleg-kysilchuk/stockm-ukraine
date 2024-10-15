@@ -1,5 +1,5 @@
 import "../pages/project-ekipazh.html";
-import "../styles/project-ekipazh.scss";
+import "../styles/project-single.scss";
 import '../modules/owl-slider';
 import '../styles/owl/owl.carousel.min.css'
 import '../styles/owl/owl.theme.default.min.css'

@@ -1,5 +1,5 @@
 import "../pages/project-miroplast.html";
-import "../styles/project-miroplast.scss";
+import "../styles/project-single.scss";
 
 const problemTabs = document.querySelectorAll(".project-problems__tab-question");
 problemTabs.forEach((item) => {
