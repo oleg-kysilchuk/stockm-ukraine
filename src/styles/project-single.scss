@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dawning+of+a+New+Day&family=Pacifico&display=swap');
+
 @import "../libs/reset";
 @import "./util";
 
@@ -359,23 +361,17 @@
     }
 
     &__item-img-l-miroplast {
-        background-image: url('../assets/project-ekipazh/zavod.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url('../assets/project-miroplast/zavod-1.jpeg');
         background-size: 480px;
     }
 
     &__item-img-m-miroplast {
-        background-image: url('../assets/project-ekipazh/zavod-2.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url('../assets/project-miroplast/zavod-2.png');
         background-size: 480px;
     }
 
     &__item-img-r-miroplast {
-        background-image: url('../assets/project-ekipazh/zavod-3.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url('../assets/project-miroplast/zavod-3.jpg');
         background-size: 480px;
     }
 
@@ -870,7 +866,8 @@
     display: flex !important;
 }
 
-.owl-carousel, .owl-carousel.owl-loaded {
+.owl-carousel,
+.owl-carousel.owl-loaded {
     overflow: hidden;
 }
 
@@ -1012,4 +1009,41 @@
     color: #000;
     font-size: 30px;
     font-weight: 300;
+}
+
+.project-quote {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 20px 0 25px;
+
+    margin-bottom: 50px;
+
+    &__wrap {
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-family: "Bad Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        color: #fff;
+        width: fit-content;
+        border-bottom: 1px solid #fff;
+        letter-spacing: 1px;
+    }
+
+    &__text-top {
+        text-align: left;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    &__text-bottom {
+        text-align: right;
+        margin-left: auto;
+    }
 }
