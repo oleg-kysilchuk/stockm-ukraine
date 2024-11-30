@@ -800,7 +800,15 @@
         background-color: #111;
     }
 
-    &__item.bg-image {
+    &__item.bg-image-ekipazh {
+        background-image: url('../assets/project-ekipazh/ekipazh-logo2.jpg');
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+        background-position-x: center;
+    }
+
+    &__item.bg-image-miroplast {
         background-image: url('../assets/05.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -1040,10 +1048,12 @@
         text-align: left;
         margin-right: auto;
         margin-bottom: 10px;
+        margin-left: 10%;
     }
 
     &__text-bottom {
         text-align: right;
         margin-left: auto;
+        margin-right: 10%;
     }
 }
