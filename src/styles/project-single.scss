@@ -196,15 +196,6 @@
         flex: 1 0 45%;
     }
 
-    &__title-cursive {
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-        color: #111;
-        line-height: 1.5;
-        margin-bottom: 5px;
-    }
-
     &__title {
         font-size: 28px;
         letter-spacing: 2px;
@@ -809,7 +800,7 @@
     }
 
     &__item.bg-image-miroplast {
-        background-image: url('../assets/05.jpg');
+        background-image: url('../assets/project-miroplast/hire.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: 45%;
