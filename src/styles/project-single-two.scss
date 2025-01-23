@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dawning+of+a+New+Day&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import "../libs/reset";
+@import "./util";
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1320px;
+    padding-top: 100px;
+}
+
+.project-heading {
+    margin: 0 auto 100px;
+    width: 100%;
+
+    &__image {
+        max-height: 500px;
+        overflow: hidden;
+
+        video {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.4;
+        position: relative;
+        top: -128px;
+    }
+
+    &__title-text {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 500;
+        font-family: "Dawning of a New Day", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    &__title-year {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 98px;
+        text-transform: uppercase;
+        text-shadow: 0.03em 0.03em 0 #b79156;
+        color: transparent !important;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #0c0c0c;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    &__text {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #a1a2a3;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0px 90px;
+    }
+
+    &__text-item {
+        width: 70%;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            text-align: left;
+            list-style: disc;
+        }
+
+        li {
+            text-align: left;
+            margin-left: 30px;
+        }
+    }
+}
+
+.project-purpose {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 60px;
+
+    &__item {}
+
+    &__image {
+
+    }
+
+    &__text {
+        width: 33%;
+        text-align: center;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: disc;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        li {
+            margin-left: 30px;
+        }
+    }
+}
+
+.project-related {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 140px 0;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 70px;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.5em;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px 10px;
+    }
+
+    &__item {
+        display: block;
+        padding: 0 0 84px 0;
+        position: relative;
+        flex: 1 0 33%;
+    }
+
+    &__item-img {
+        position: relative;
+        overflow: hidden;
+        transform: translateZ(0);
+    }
+
+    &__item-img img {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        max-height: 238px;
+    }
+
+    &__item-img::after {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(250, 250, 250, 0);
+        transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    }
+
+    &__item-mask {
+        width: 100%;
+        height: 84px;
+        padding: 20px 20px 0 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    }
+
+    &__item-title {
+        margin-bottom: 8px;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        line-height: 1.2;
+    }
+
+    &__item-description {
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #aaa;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+}
+
+.project-related__item:hover>.project-related__item-img img {
+    transform: scale(1.05);
+}
+
+.project-related__item:hover>.project-related__item-img::after {
+    background: rgba(250, 250, 250, .9);
+}
+
+.project-related__item:hover>.project-related__item-mask {
+    transform: translateY(-99px);
+    z-index: 3;
+}
