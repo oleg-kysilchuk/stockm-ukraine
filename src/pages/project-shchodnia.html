@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/owl/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <title>Щодня - товари Вашої сім'ї.</title>
 </head>
@@ -22,436 +26,210 @@
 <body>
     <main>
         <section class="project-heading">
-            <p class="project-heading__title">
-                <img src="../assets/clients-ua/ekipazh-logo.png" alt="ekipazh-logo">
-            </p>
-            <video class="project-heading__video" autoplay loop muted playsinline>
-                <source src="../assets/video-ekipazh.mp4" type="video/mp4" />
-            </video>
-        </section>
+            <div class="project-heading__image">
+                <img src="../assets/project-kpi/heading-video.JPG" alt="kpi">
+            </div>
 
-        <section class="project-details">
-            <div class="project-details__wrap">
-                <div class="project-details__item-tags">
-                    <h4 class="project-details__item-title">Деталі проєкту</h4>
-                    <hr class="line">
-                    <p class="project-details__item-tag">
-                        <span>Клієнт:</span> ТОВ Екіпаж
-                    </p>
-                    <hr class="line">
-                    <p class="project-details__item-tag">
-                        <span>Дата:</span> 2021
-                    </p>
-                    <hr class="line">
-                    <p class="project-details__item-tag">
-                        <span>Вебсайт:</span> www.ekipazh-zavod.com
-                    </p>
-                    <hr class="line">
+            <div class="project-heading__title">
+                <div class="project-heading__title-text">З’явилася мрія - створити мережу магазинів, але ...</div>
+                <div class="project-heading__title-year">2009</div>
+            </div>
+
+            <div class="project-heading__text">
+                <div class="project-heading__text-item">
+                    «Щодня» - мережа магазинів-партнерів. Компанія створена для того, щоб ви могли придбати товари, необхідні для усієї родини за вигідними цінами
                 </div>
-                <div class="project-details__item">
-                    <p class="project-details__item-text">
-                        Компанія «Екіпаж» - один з найбільших виробників металопластикових та алюмінієвих вікон і
-                        дверей.
-                        Заснована компанія в 2006 році в м Первомайському, (Україна).<br />
-                        На сьогоднішній день, компанія EKIPAZH має три заводи з виробництва металопластикових і
-                        алюмінієвих
-                        конструкцій розташованих в містах Первомайський, Хмельницький і Бровари.
-                    </p>
+                <div class="project-heading__text-item">
+                    Наразі мережу об’єднує більше 180 магазинів формату drogerie на території Хмельницької, Рівненської, Чернівецької, Тернопільської, Вінницької, Івано-Франківської та Волинської областей
                 </div>
             </div>
         </section>
 
-        <section class="project-request">
-            <div class="project-request__item project-request__item-image">
-                <img src="../assets/project-ekipazh/project-request.png" alt="ekipazh">
+        <section class="project-purpose">
+            <div class="project-purpose__image project-purpose__item">
+                <img src="../assets/project-kpi/kpi-june.png" alt="kpi">
             </div>
-            <div class="project-request__item project-request__item-text">
-                <h2 class="project-request__title">Запит компанії</h2>
-                <ul class="project-request__text">
-                    <li>забезпечення наявності комплектуючих для виконання замовлень вчасно</li>
-                    <li>зменшення надлишкових запасів</li>
-                    <li>підвищення рівня сервісу</li>
+            <div class="project-purpose__text project-purpose__item">
+                <h3>МЕТА ВПРОВАДЖЕННЯ STOCK-M в пілотному проєкті</h3>
+                <ul>
+                    <li>виявити проблемні місця в управлінні запасами на прикладі одного магазину</li>
+                    <li>зрозуміти причини їх виникнення</li>
+                    <li>оцінити переваги системи STOCK-M</li>
+                    <li>та вигоди впровадження в мережі магазинів, щоб заробляти більше зараз і в майбутньому</li>
                 </ul>
             </div>
         </section>
 
-        <section class="project-about-us">
-            <div class="project-about-us__container">
-                <div class="project-about-us__item project-about-us__item-text">
-                    <h2 class="project-about-us__title">До впровадження STOCK-M</h2>
-                    <p class="project-about-us__text">Виробник металопластикових конструкцій, маючи в асортименті
-                        велику кількість комплектуючих для виробництва вікон та дверей,
-                        не завжди вчасно міг відвантажити замовлення клієнту.</p>
-                    <ul class="project-about-us__list">
-                        <li>розрахунок замовлення робили в Excel</li>
-                        <li>замовляли SKU по потребі</li>
-                        <li>постійні термінові замовлення постачальникам</li>
-                        <li>не вистачало часу для аналізу залишків</li>
-                        <li>що замовити і скільки - вирішували співробітники</li>
+        <section class="project-start">
+            <div class="project-start__content-container">
+                <div class="project-start__text-item project-start__content-item">
+                    <h5 class="project-start__title-small">"У нас всі дані впорядку, ми постійно з ними працюємо..."
+                    </h5>
+                    <!-- <h2 class="project-start__title">Початок проекту - провадження системи Stock-M в 5 магазинах мережі
+                        “КПІ-сервіс”</h2> -->
+                    <p class="project-start__text">Перед тим, як почати процес впровадження Stock-M, зробили аналіз
+                        процесів закупки та перевірили наявність необхідної інформації в обліковій системі 1С</p>
+                </div>
+                <div class="project-start__icons-item project-start__content-item">
+                    <h4 class="project-start__icons-title-small">Що ми зрозуміли:</h4>
+                    <div class="project-start__icons-wrap">
+                        <div class="project-start__icon-item">
+                            <i class="fa-solid fa-chart-bar project-start__icon-image"></i>
+                            <h5 class="project-start__icon-title">Важко зробити повний аналіз асортименту перед замовленням</h5>
+                            <p class="project-start__icon-text">Проаналізувати весь асортимент не можливо, автозаявка в 1С працює, але її потрібно корегувати</p>
+                        </div>
+
+                        <div class="project-start__icon-item">
+                            <i class="fa-solid fa-user-tie project-start__icon-image"></i>
+                            <h5 class="project-start__icon-title">Виникали надлишкові запаси</h5>
+                            <p class="project-start__icon-text">Замовлення менеджера проконтролювати не можливо і помилку помічали лише тоді, коли виникали запаси товару, який рухався повільно або ж зовсім не продавався</p>
+                        </div>
+
+                        <div class="project-start__icon-item">
+                            <i class="fa-solid fa-magnifying-glass project-start__icon-image"></i>
+                            <h5 class="project-start__icon-title">Часто не вистачало ходових позицій</h5>
+                            <p class="project-start__icon-text">Якщо товар був ходовий, він швидко продавався і його
+                                завжди не вистачало</p>
+                        </div>
+
+                        <div class="project-start__icon-item">
+                            <i class="fa-solid fa-boxes-stacked project-start__icon-image"></i>
+                            <h5 class="project-start__icon-title">Закупали по потребі</h5>
+                            <p class="project-start__icon-text">Завжди замовляли товар, який буде продаватись, але з
+                                часом накопичувались залишки, які приходилось уцінювати і розпродавати</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-stages">
+            <div class="project-stages__stage">
+                <div class="project-stages__description">
+                    <h5 class="project-stages__title-small">“У нас не вистачає даних, для впровадження Stock-M”</h5>
+                    <h3 class="project-stages__title">Перший етап впровадження - <span>інтеграція</span></h3>
+                    <ul class="project-stages__list">
+                        <li>аналіз наявності потрібних даних</li>
+                        <li>допрацювання в 1С</li>
+                        <li>вивантаження даних в Stock-M</li>
+                        <li>тестування та перевірка</li>
                     </ul>
-
                 </div>
-                <div class="project-about-us__item project-about-us__item-img-l">
-                </div>
-                <div class="project-about-us__item project-about-us__item-img-r">
+                <div class="project-stages__images">
+                    <div class="project-stages__image-item project-stages__image-item-left">
+                        <p class="project-stages__image-text project-stages__image-text-top">Навчили домовлятись між
+                            собою 1С і Stock-M (обмін даними)</p>
+                    </div>
+                    <div class="project-stages__image-item">
+                        <img src="../assets/project-kpi/DSC02786.JPG" alt="kpi"
+                            class="project-stages__image project-stages__image-1">
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="project-problems">
-            <div class="project-problems__container">
-                <div class="project-problems__text-wrap">
-                    <h2 class="project-problems__title-cursive">"Ми теж так працюємо, та це не проблеми, а наша
-                        специфіка роботи..."<br />
-                        І Ви так думаєте?</h2>
-                    <h3 class="project-problems__title">Які проблеми<br /> виникали...</h3>
-                    <div class="project-problems__image">
-                        <img src="../assets/project-ekipazh/project-problems.jpg" alt="project problems">
+            <div class="project-stages__stage">
+                <div class="project-stages__description">
+                    <!-- <h5 class="project-stages__title-small">“У нас не вистачає даних для впровадження Stock-M”</h5> -->
+                    <h3 class="project-stages__title">Другий етап впровадження - <span>автоматизація</span></h3>
+                    <p class="project-stages__text">Система щодня робила автоматичний аналіз асортименту магазину, формувала замовлення постачальникам</p>
+                    <p class="project-stages__text">На початку проекту ми дозволили менеджерам корегувати замовлення, щоб залишити контроль в їх руках і зняти хвилювання</p>
+                </div>
+                <div class="project-stages__images">
+                    <div class="project-stages__image-item project-stages__image-item-left">
+                        <p class="project-stages__image-text project-stages__image-text-top">Отримали щоденний автоматичний аналіз асортименту (АBC,
+                            рекомендації по ТОР-movers, OUT-movers)</p>
+                        <p class="project-stages__image-text">Довірили формування
+                            замовлень Stock-M</p>
+                    </div>
+                    <div class="project-stages__image-item">
+                        <img src="../assets/project-kpi/DSC01897.JPG" alt="kpi" class="project-stages__image">
                     </div>
                 </div>
+            </div>
 
-                <div class="project-problems__tabs">
-                    <div class="project-problems__tab-item">
-                        <div class="project-problems__tab-question active">
-                            <svg class="project-problems__icon" fill="#000000" width="15" height="10" version="1.1"
-                                id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path id="XMLID_225_"
-                                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
-                                    </path>
-                                </g>
-                            </svg>
-
-                            <span class="project-problems__question">Не вистачало часу для якісного аналізу
-                                залишків</span>
-                        </div>
-
-                        <div class="project-problems__tab-answer">
-                            <p class="project-problems__answer">
-                                Розрахунки в Excel забирали багато часу і постійно не вистачало його для чіткого аналізу
-                                асортименту, залишків на складах та формування точного та якісного замовлення
-                            </p>
-                        </div>
+            <div class="project-stages__stage">
+                <div class="project-stages__description">
+                    <!-- <h5 class="project-stages__title-small">“У нас не вистачає даних, як впроваджувати Stock-M?”</h5> -->
+                    <h3 class="project-stages__title">Третій етап впровадження – <span>пошук проблем та причин їх виникнення</span>
+                    </h3>
+                    <!-- <p class="project-stages__text">Довелося навести порядок з даними в 1С, які так давно планували та
+                        не робили. Це також дозволило покращити роботу всіх магазинів</p> -->
+                </div>
+                <div class="project-stages__images">
+                    <div class="project-stages__image-item project-stages__image-item-left">
+                        <p class="project-stages__image-text project-stages__image-text-top">Проводили аналіз та оцінку кожної ситуації, де виникав дефіцит товару</p>
+                        <p class="project-stages__image-text">Контролювали виникнення надлишкових запасів та вивчали причини їх виникнення</p>
                     </div>
-
-                    <div class="project-problems__tab-item">
-                        <div class="project-problems__tab-question">
-                            <svg class="project-problems__icon" fill="#000000" width="15" height="10" version="1.1"
-                                id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path id="XMLID_225_"
-                                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
-                                    </path>
-                                </g>
-                            </svg>
-
-                            <span class="project-problems__question">Іноді не вистачало деталей для швидкого виконання
-                                замовлень</span>
-                        </div>
-
-                        <div class="project-problems__tab-answer">
-                            <p class="project-problems__answer">
-                                Прогнози рідко справджувались, кількість товару на складі важко було розрахувати, як
-                                правило, часто не вистачало ходових SKU
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-problems__tab-item">
-                        <div class="project-problems__tab-question">
-                            <svg class="project-problems__icon" fill="#000000" width="15" height="10" version="1.1"
-                                id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path id="XMLID_225_"
-                                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
-                                    </path>
-                                </g>
-                            </svg>
-
-                            <span class="project-problems__question">Зростали витрати логістики</span>
-                        </div>
-
-                        <div class="project-problems__tab-answer">
-                            <p class="project-problems__answer">
-                                Часто виникав ризик затримати відвантаження замовлення клієнту. Виникали термінові
-                                замовлення постачальникам, які потрібно було виконувати швидко та оплатити додатково
-                                логістику
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-problems__tab-item">
-                        <div class="project-problems__tab-question">
-                            <svg class="project-problems__icon" fill="#000000" width="15" height="10" version="1.1"
-                                id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path id="XMLID_225_"
-                                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
-                                    </path>
-                                </g>
-                            </svg>
-
-                            <span class="project-problems__question">Періодично відвантаження клієнту
-                                затримувались</span>
-                        </div>
-
-                        <div class="project-problems__tab-answer">
-                            <p class="project-problems__answer">
-                                Компанія ризикувала втратити лояльність постійних клієнтів, не отриматати нових клієнтів
-                                та зменшити свій прибуток
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-problems__tab-item">
-                        <div class="project-problems__tab-question">
-                            <svg class="project-problems__icon" fill="#000000" width="15" height="10" version="1.1"
-                                id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path id="XMLID_225_"
-                                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
-                                    </path>
-                                </g>
-                            </svg>
-
-                            <span class="project-problems__question">Висока залежність від людського фактору</span>
-                        </div>
-
-                        <div class="project-problems__tab-answer">
-                            <p class="project-problems__answer">
-                                Досвід співробітників допомагав в роботі, але помилки при замовленні постачальнику для
-                                компанії мали високу ціну, компанія могла роками розпродавати замовленні SKU
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="project-problems__tab-item">
-                        <div class="project-problems__tab-question">
-                            <svg class="project-problems__icon" fill="#000000" width="15" height="10" version="1.1"
-                                id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path id="XMLID_225_"
-                                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
-                                    </path>
-                                </g>
-                            </svg>
-
-                            <span class="project-problems__question">Накопичення надлишкових запасів</span>
-                        </div>
-
-                        <div class="project-problems__tab-answer">
-                            <p class="project-problems__answer">
-                                Через відсутність якісного аналізу залишків та асортименту, часто не вистачало ходових
-                                SKU, а менш ходові накопичувались та стопорили обігові кошти, зменшуючи оборотність та
-                                рентабельність
-                            </p>
-                        </div>
+                    <div class="project-stages__image-item">
+                        <img src="../assets/project-kpi/DSC02753.JPG" alt="kpi" class="project-stages__image">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="project-before">
-            <div class="project-before__wrap">
-                <div class="project-before__item project-before__item-text">
-                    <h2 class="project-before__title">Компанія шукала рішення, яке б допомогло:</h2>
-                    <div class="project-before__content">
-                        <div class="project-before__content-video">
-                            <video width="230" muted playsinline autoplay loop>
-                                <source src="../assets/ekipazh-small.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <div class="project-before__content-text">
-                            <ul class="project-before__list">
-                                <li class="project-before__list-item">оптимізувати запаси на складах;</li>
-                                <li class="project-before__list-item">автоматизувати процес замовлення;</li>
-                                <li class="project-before__list-item">виконувати замовлення клієнта за 1 день;</li>
-                                <li class="project-before__list-item">збільшити рівень сервісу;</li>
-                                <li class="project-before__list-item">збільшити оборотность складів</li>
-                            </ul>
-                        </div>
+        <section>
+            <div class="owl-carousel">
+                <div class="owl-slide">
+                    <div class="owl-slide__icon">
+                        <i class="fa-regular fa-comments"></i>
                     </div>
-                    <p class="project-before__text">Інструмент повинен збалансувати рівень товарних запасів так, щоб
-                        завжди вистачало комплектуючих для виробництва і не виникали надлишки на складі</p>
+                    <p class="owl-slide__quote">Звісно, це було щось нове для нас в той час і отримати результати від впровадження Stock-M ми не дуже сподівались – не вірили, але робили все, як було заплановано. Більше нас цікавило те, чи можемо ми довіряти системі.</p>
+                    <p class="owl-slide__company">john doe doodle inc.</p>
                 </div>
-                <div class="project-before__item project-before__item-image">
-                    <img src="../assets/project-ekipazh/ekipazh-december.png" alt="ekipazh">
-                </div>
-            </div>
-        </section>
 
-        <section class="project-hire-us">
-            <div class="project-hire-us__wrap">
-                <div class="project-hire-us__item bg-image">
-                    <p class="project-hire-us__item-title stroke">Hire Us</p>
-                    <a class="project-hire-us__item-link">Get in Touch</a>
+                <div class="owl-slide">
+                    <div class="owl-slide__icon">
+                        <i class="fa-regular fa-comments"></i>
+                    </div>
+                    <p class="owl-slide__quote">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iusto autem ut error neque, quis expedita.</p>
+                    <p class="owl-slide__company">john doe doodle inc.</p>
                 </div>
-                <div class="project-hire-us__item">
-                    <p class="project-hire-us__item-title">ЩО БУЛО ЗРОБЛЕНО</p>
-                    <a class="project-hire-us__item-link">Purchase now</a>
+
+                <div class="owl-slide">
+                    <div class="owl-slide__icon">
+                        <i class="fa-regular fa-comments"></i>
+                    </div>
+                    <p class="owl-slide__quote">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iusto autem ut error neque, quis expedita.</p>
+                    <p class="owl-slide__company">john doe doodle inc.</p>
                 </div>
             </div>
         </section>
 
         <section class="project-results">
-            <div class="project-results__items-wrap">
-
-                <div class="project-results__item project-item-01">
-                    <div class="project-results__item-text">
-                        <p class="project-results__item-number">01</p>
-                        <div class="project-results__item-text-container">
-                            <p class="project-results__item-title">Аналіз</p>
-                            <ul class="project-results__item-desc">
-                                <li>умов та термінів постачання продукції, специфіки замовлень та асортименту;</li>
-                                <li>проблем в управлінні запасами та причин їх виникнення.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="project-results__item-image">
-                        <img src="../assets/project-ekipazh/slide-1.jpg" alt="результат проєкту">
+            <h4 class="project-results__title">Як позбутись причин</h4>
+            <div class="project-results__container">
+                <div class="project-results__item">
+                    <img class="project-results__item-image" src="../assets/project-kpi/DSC01981.JPG" alt="kpi">
+                    <p class="project-results__item-text-left">Автоматизація процесів управління запасами та асортиментом може дати сильний поштовх для розвитку мережі</p>
+                </div>
+                <div class="project-results__item">
+                    <img class="project-results__item-image" src="../assets/project-kpi/DSC01941.JPG" alt="kpi">
+                    <p class="project-results__item-text-right">Актуальний асортимент</p>
+                    <p class="project-results__item-text-right">Точність замовлення</p>
+                    <p class="project-results__item-text-right">Додатковий капітал для розвитку</p>
+                </div>
+                <div class="project-results__item project-results__item-last">
+                    <p class="project-results__item-title">Додаткові результати впровадження</p>
+                    <ul class="project-results__item-list">
+                        <li class="project-results__item-list-item">Не потрібно прогнозувати, що замовити</li>
+                        <li class="project-results__item-list-item">Відсутність помилок в замовленнях</li>
+                        <li class="project-results__item-list-item">Не накопичуються надлишкові запаси</li>
+                        <li class="project-results__item-list-item">Мінімальна кількість розпродажів та списань</li>
+                        <li class="project-results__item-list-item">Постійна наявність ходового товару</li>
+                    </ul>
+                    <div class="project-results__item-text-color">
+                        Аналізом асортименту та закупкою 60 000 товарів щодня займалась система управління запасами
+                        Stock-M та два менеджери відділу закупок
                     </div>
                 </div>
-
-                <div class="project-results__item project-item-02">
-
-                    <div class="project-results__item-image">
-                        <img src="../assets/project-ekipazh/slide-2.jpg" alt="результат проєкту">
-                    </div>
-
-                    <div class="project-results__item-text">
-                        <p class="project-results__item-number" style="margin-right: 11px;">02</p>
-                        <div class="project-results__item-text-container">
-                            <p class="project-results__item-title">Навчання</p>
-                            <ul class="project-results__item-desc">
-                                <li>вивчення алгоритму замовлення та налаштування системи Stock-M;</li>
-                                <li>навчання персоналу правилам та принципам роботи із системою Stock-M;</li>
-                                <li>розробка правил та процедур, за якими повинні працювати співробітники.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-results__item project-item-03" style="align-items: flex-start;">
-                    <div class="project-results__item-text"
-                        style="align-items: flex-start; height: 332px; padding-top: 75px;">
-                        <p class="project-results__item-number" style="margin-right: 11px;">03</p>
-                        <div class="project-results__item-text-container">
-                            <p class="project-results__item-title">Інтеграція</p>
-                            <ul class="project-results__item-desc">
-                                <li>синхронізація та налаштування обміну даними між системою клієнта та Stock-M;</li>
-                                <li>налаштування даних;</li>
-                                <li>тестування результатів;</li>
-                                <li>пошук проблемних місць та їх усунення.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="project-results__item-image">
-                        <img src="../assets/project-ekipazh/slide-3.jpg" alt="результат проєкту">
-                    </div>
-                </div>
-
-                <div class="project-results__item project-item-04">
-
-                    <div class="project-results__item-image">
-                        <img src="../assets/project-ekipazh/slide-4.jpg" alt="результат проєкту">
-                    </div>
-
-                    <div class="project-results__item-text">
-                        <p class="project-results__item-number" style="margin-right: 11px;">04</p>
-                        <div class="project-results__item-text-container">
-                            <p class="project-results__item-title">Автоматизація</p>
-                            <ul class="project-results__item-desc">
-                                <li>аналізу асортименту і залишків на складах: <br />
-                                    система щодня слідкує за попитом ринку, аналізує залишки на складі, <br />
-                                    та враховує дані при замовленні постачальнику;
-                                </li>
-                                <li>
-                                    процес замовлення: <br />
-                                    замовлення створюється автоматично та надсилається постачальнику.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-results__item project-item-05" style="align-items: flex-start;">
-                    <div class="project-results__item-text"
-                        style="align-items: flex-start; padding-top: 75px; border-bottom: none; height: 250px;">
-                        <p class="project-results__item-number" style="margin-right: 11px;">05</p>
-                        <div class="project-results__item-text-container">
-                            <p class="project-results__item-title">Досягнення результатів</p>
-                            <ul class="project-results__item-desc">
-                                <li>щоденна аналітика показників системи: <br />
-                                    обговорення та щоденні/щотижневі зустрічі з консультантами Stock-M, вироблення
-                                    напрямків рішень для досягнення результатів, визначених компанією;</li>
-                                <li>управління процесом закупівлі <br />
-                                    продукції відбувається за показниками системи
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="project-results__item-image">
-                        <img src="../assets/project-ekipazh/slide-5.jpg" alt="результат проєкту">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-description">
-            <div class="project-description__item">
-                <h4 class="project-description__item-title">Рівень сервісу</h4>
-                <p class="project-description__item-text">
-                    збільшили до 96%
-                </p>
-            </div>
-            <div class="project-description__item">
-                <h4 class="project-description__item-title">Рівень втрачених продаж</h4>
-                <p class="project-description__item-text">
-                    зменшили до 3%
-                </p>
-            </div>
-            <div class="project-description__item">
-                <h4 class="project-description__item-title">Рівень надлишкових запасів</h4>
-                <p class="project-description__item-text">
-                    зменшення на 10% <br />
-                    процес зменшення триває
-                </p>
             </div>
         </section>
 
         <section class="project-related">
             <h2 class="project-related__title">Інші проекти</h2>
             <div class="project-related__container">
-                <a href="./project-kpi.html" class="project-related__item">
-                    <div class="project-related__item-img">
-                        <img src="../assets/projects/kpi-project.png" alt="kpi">
-                    </div>
-                    <div class="project-related__item-mask">
-                        <h3 class="project-related__item-title">КПІ-Сервіс</h3>
-                        <p class="project-related__item-description">Роздрібна торгівля</p>
-                    </div>
-                </a>
                 <a href="./project-ekipazh.html" class="project-related__item">
                     <div class="project-related__item-img">
                         <img src="../assets/projects/ekipazh-project.png" alt="ekipazh">
@@ -459,6 +237,15 @@
                     <div class="project-related__item-mask">
                         <h3 class="project-related__item-title">ТОВ Екіпаж</h3>
                         <p class="project-related__item-description">Виробник</p>
+                    </div>
+                </a>
+                <a href="./project-shchodnia.html" class="project-related__item">
+                    <div class="project-related__item-img">
+                        <img src="../assets/projects/shchodnia-project.png" alt="shchodnia">
+                    </div>
+                    <div class="project-related__item-mask">
+                        <h3 class="project-related__item-title">Щодня</h3>
+                        <p class="project-related__item-description">Роздрібна торгівля</p>
                     </div>
                 </a>
                 <a href="./project-miroplast.html" class="project-related__item">
@@ -511,6 +298,7 @@
         </div>
     </footer>
 
+    <script defer src="../modules/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/2f5f85827b.js" crossorigin="anonymous"></script>
 </body>
 
