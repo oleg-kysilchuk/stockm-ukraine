@@ -368,6 +368,106 @@ main {
     display: none;
 }
 
+.project-probs {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-top: 100px;
+
+    &__heading {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+
+    &__container {
+        max-width: 1320px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 120px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    &__list-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__item-title {
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__item-text {
+        font-size: 15px;
+    }
+
+    &__number {
+        font-size: 80px;
+        font-weight: 700;
+        color: transparent !important;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+        user-select: none;
+        margin-right: 30px;
+    }
+
+    &__title-wrap {
+        position: relative;
+    }
+
+    &__title-image {
+        height: auto;
+        max-height: 380px;
+    }
+
+    &__title-text {
+        text-transform: uppercase;
+        font-size: 46px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: #fff;
+        -webkit-text-stroke-color: #000;
+        -webkit-text-stroke-width: 0.5px;
+    }
+
+}
+
+.project-probs-bottom {
+    padding-top: 50px;
+}
+
 .project-results {
     max-width: 1320px;
     width: 100%;
@@ -402,6 +502,10 @@ main {
 
     &__item-image {
         margin-bottom: 15px;
+    }
+
+    &__item-image-mid {
+        margin-bottom: 0;
     }
 
     &__item-text-left {
