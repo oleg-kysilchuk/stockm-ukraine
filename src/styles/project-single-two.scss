@@ -99,6 +99,10 @@ main {
         width: 500px;
     }
 
+    &__item-sh {
+        width: 550px;
+    }
+
     &__text {
         width: 33%;
         text-align: center;
@@ -268,6 +272,10 @@ main {
 
     &__image-1 {
         max-width: 300px;
+    }
+
+    &__image-1-sh {
+        max-width: 100%;
     }
 
     &__image-text {
