@@ -83,6 +83,10 @@ main {
             margin-left: 30px;
         }
     }
+
+    &__text-item-l {
+        padding-top: 37px;
+    }
 }
 
 .project-purpose {
@@ -271,7 +275,7 @@ main {
     }
 
     &__image-1 {
-        max-width: 300px;
+        max-width: 270px;
     }
 
     &__image-1-sh {
@@ -280,10 +284,10 @@ main {
 
     &__image-text {
         font-weight: 800;
-        font-size: 21px;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #222;
+        font-size: 20px;
+        color: #222;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: #222;
     }
 
     &__image-text-top {
