@@ -392,6 +392,21 @@
   }
 }
 
+.consulting-description {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  color: #111;
+  background-color: #f8f8f8;
+
+  &__text {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
 .choose-us {
   width: 100%;
   max-width: 1536px;
