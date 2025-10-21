@@ -24,7 +24,7 @@
     letter-spacing: 2px;
     text-align: center;
     position: absolute;
-    top: 250px;
+    bottom: 10%;
     left: 0;
     z-index: 99;
   }
@@ -39,21 +39,21 @@
       padding: 0 15px;
       text-indent: 0;
       font-size: 24px;
-      top: 33%;
+      bottom: 10%;
     }
   }
 
   @media (min-width: 992px) and (max-width: 1720px) {
     &__title {
       font-size: 34px;
-      top: 40%;
+      bottom: 10%;
     }
   }
 
   @media (min-width: 1800px) {
     &__title {
       font-size: 46px;
-      top: 40%;
+      bottom: 10%;
     }
   }
 }
