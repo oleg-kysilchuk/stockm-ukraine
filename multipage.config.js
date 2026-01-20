@@ -15,6 +15,8 @@ result.entry = {
   'project-kpi': path.resolve(__dirname, "src/scripts", "project-kpi.js"),
   'project-shchodnia': path.resolve(__dirname, "src/scripts", "project-shchodnia.js"),
   'project-miroplast': path.resolve(__dirname, "src/scripts", "project-miroplast.js"),
+  modeling: path.resolve(__dirname, "src/scripts", "modeling.js"),
+  implementation: path.resolve(__dirname, "src/scripts", "implementation.js"),
 };
 
 result.pages = [
@@ -77,6 +79,16 @@ result.pages = [
     chunks: ["project-miroplast"],
     page: "pages/project-miroplast.html",
     template: path.resolve(__dirname, "src", "pages/project-miroplast.html"),
+  },
+  {
+    chunks: ["implementation"],
+    page: "pages/implementation.html",
+    template: path.resolve(__dirname, "src", "pages/implementation.html"),
+  },
+  {
+    chunks: ["modeling"],
+    page: "pages/modeling.html",
+    template: path.resolve(__dirname, "src", "pages/modeling.html"),
   },
 ];
 
