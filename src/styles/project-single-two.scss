@@ -511,7 +511,7 @@ main {
     max-width: 1320px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     padding-top: 100px;
 
     &__heading {
@@ -678,7 +678,7 @@ main {
         line-height: 1.6;
         font-size: 18px;
         text-align: center;
-        padding: 5px 20px 0;
+        padding: 20px 20px 0;
     }
 
     &__item-last {
@@ -992,4 +992,41 @@ main {
     max-height: 80px;
     margin-bottom: 20px;
     padding-left: 45px;
+}
+
+.about-description {
+    width: 100%;
+    padding: 70px 20px;
+    text-align: center;
+    color: #111;
+    background-color: #e7e7e7;
+
+    &__title {
+        width: 65%;
+        margin: 0 auto;
+        font-size: 24px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    &__title-reverted {
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+
+    &__text-reverted {
+        font-size: 24px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
 }

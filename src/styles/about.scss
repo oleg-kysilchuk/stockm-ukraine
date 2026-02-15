@@ -900,10 +900,11 @@ hr.grey {
 
 .pcss3t .grid-col,
 .pcss2t .grid-col,
-.pcss1t .grid-col, {
-  display: block;
-  float: left;
-  margin-left: 2%;
+.pcss1t .grid-col,
+{
+display: block;
+float: left;
+margin-left: 2%;
 }
 
 .pcss3t .grid-col:first-child,
@@ -1428,8 +1429,7 @@ li.tab-content {
 /* icons positions */
 /**/
 .pcss3t-icons-top>label,
-.pcss2t-icons-top>label
-.pcss1t-icons-top>label {
+.pcss2t-icons-top>label .pcss1t-icons-top>label {
   text-align: center;
 }
 
@@ -1490,6 +1490,7 @@ li.tab-content {
 /* phone */
 /**/
 @media screen and (max-width: 767px) {
+
   .pcss3t>label,
   .pcss2t>label,
   .pcss1t>label {
@@ -1593,6 +1594,7 @@ li.tab-content {
 }
 
 @media screen and (max-width: 767px) {
+
   .pcss3t-theme-1>label,
   .pcss2t-theme-1>label,
   .pcss1t-theme-1>label {
