@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(ls:*)",
+      "Bash(npm run:*)",
+      "Bash(grep:*)",
+      "Bash(NODE_ENV=production npx webpack:*)"
+    ]
+  }
+}

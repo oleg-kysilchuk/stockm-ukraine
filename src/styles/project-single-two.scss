@@ -1030,3 +1030,261 @@ main {
         text-transform: uppercase;
     }
 }
+
+// ===== RESPONSIVE =====
+
+@media (max-width: 991px) {
+  .project-heading {
+    padding-top: 70px;
+    height: auto;
+    min-height: 100vh;
+
+    &__container {
+      flex-direction: column;
+      gap: 30px 0;
+      padding: 0 20px 40px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  .project-purpose {
+    flex-direction: column;
+    gap: 30px 0;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+
+    &__item,
+    &__item-sh {
+      width: 100%;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .project-start {
+    padding: 50px 0;
+    margin-bottom: 40px;
+
+    &__content-container {
+      flex-direction: column;
+      gap: 30px 0;
+      padding: 0 20px;
+    }
+
+    &__text-item,
+    &__icons-item {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__icon-item {
+      width: 100%;
+    }
+  }
+
+  .project-stages {
+    &__stage {
+      flex-direction: column;
+      gap: 30px 0;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    &__description {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__images {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    &__image-item {
+      width: 100%;
+    }
+  }
+
+  .owl-slide {
+    padding: 15% 20px;
+
+    &__heading {
+      font-size: 16px;
+    }
+
+    &__quote {
+      width: 90%;
+      font-size: 15px;
+    }
+  }
+
+  .project-probs {
+    padding-top: 50px;
+    margin-bottom: 40px;
+    padding: 50px 20px 0;
+
+    &__heading {
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__container {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+
+  .about-description {
+    padding: 40px 20px;
+
+    &__title {
+      width: 100%;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+
+  .project-problems {
+    padding: 40px 20px 60px;
+
+    &__container {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+
+    &__text-wrap {
+      flex: none;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 26px;
+      letter-spacing: 1px;
+      margin-left: 0;
+    }
+
+    &__title-text {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+
+  .project-probs {
+    &__number {
+      font-size: 48px;
+    }
+
+    &__title-text {
+      font-size: 28px;
+    }
+  }
+
+  .project-results {
+    padding: 40px 20px;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__container {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+
+    &__item {
+      width: 100%;
+      height: auto;
+    }
+
+    &__item-text-left,
+    &__item-text-right {
+      font-size: 15px;
+    }
+
+    &__item-title {
+      font-size: 18px;
+    }
+  }
+
+  .project-related {
+    padding: 60px 20px 40px;
+
+    &__container {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+
+    &__item {
+      flex: none;
+      width: 100%;
+      padding-bottom: 60px;
+    }
+  }
+
+  .header-content h1 {
+    font-size: 36px;
+  }
+
+  .header-content p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  .project-heading {
+    &__container {
+      gap: 0 60px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__text {
+      font-size: 22px;
+    }
+  }
+
+  .project-stages {
+    &__stage {
+      margin: 120px auto;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}

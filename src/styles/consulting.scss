@@ -859,3 +859,156 @@ p.problems__item-text:nth-of-type(2n) {
     }
   }
 }
+
+// ===== RESPONSIVE =====
+
+@media (max-width: 991px) {
+  .consulting-home {
+    gap: 40px 0;
+
+    &__title {
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin-top: 0;
+      width: 90%;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      width: 90%;
+    }
+  }
+
+  .services-photos {
+    padding: 40px 15px 0;
+
+    &__title {
+      font-size: 15px;
+      letter-spacing: 0.15em;
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+
+  .section-divider {
+    width: 95%;
+    padding: 30px 15px;
+
+    &__text {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 15px 0;
+    }
+
+    &__link-btn {
+      width: 65%;
+      height: 44px;
+    }
+  }
+
+  .consulting-description {
+    &__text {
+      width: 95%;
+      font-size: 20px;
+    }
+  }
+
+  .choose-us {
+    padding: 40px 20px 60px;
+
+    &__container {
+      width: 100%;
+      gap: 40px 20px;
+    }
+
+    &__item {
+      flex: 1 1 100%;
+    }
+  }
+
+  .our-projects {
+    width: 95%;
+
+    &__title-wrap {
+      flex-direction: column;
+      gap: 15px 0;
+      margin-bottom: 40px;
+    }
+
+    &__container {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+
+    &__item {
+      flex: none;
+      width: 100%;
+    }
+
+    &__image-block {
+      max-width: 100%;
+      max-height: 220px;
+    }
+
+    &__item-text {
+      height: auto;
+    }
+  }
+
+  .work-process {
+    padding: 50px 20px;
+
+    &__container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__text-wrap,
+    &__tabs {
+      flex: none;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  .consulting-description {
+    &__text {
+      width: 80%;
+      font-size: 22px;
+    }
+  }
+
+  .our-projects {
+    &__container {
+      gap: 0 15px;
+    }
+
+    &__item-text {
+      height: 130px;
+    }
+  }
+
+  .work-process {
+    &__container {
+      width: 90%;
+    }
+  }
+
+  .choose-us {
+    &__container {
+      width: 90%;
+    }
+  }
+}

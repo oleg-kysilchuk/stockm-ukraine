@@ -6,6 +6,7 @@ const swiper = new Swiper(".swiper", {
   edgeSwipeThreshold: 30,
   autoplay: {
     delay: 3000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     // when window width is >= 992px

@@ -1834,3 +1834,250 @@ li.tab-content {
 .pcss1t>ul>li {
   height: 480px;
 }
+
+// ===== RESPONSIVE =====
+
+@media (max-width: 991px) {
+  .phrase {
+    font-size: 18px;
+    letter-spacing: 0;
+    padding: 0 20px;
+  }
+
+  .morphing__title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 0 20px;
+  }
+
+  .problems__block-image {
+    width: 100%;
+    padding: 30px 15px;
+
+    .swiper {
+      width: 68%;
+      height: 44%;
+      top: 43%;
+    }
+  }
+
+  .separator {
+    padding: 15px 20px;
+
+    &__title {
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      font-size: 13px;
+    }
+  }
+
+  .about-description {
+    padding: 40px 20px;
+
+    &__text {
+      width: 100%;
+      font-size: 15px;
+    }
+
+    &__text-reverted {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .divider-title {
+    padding-top: 30px;
+    padding-left: 20px;
+    align-items: flex-start;
+
+    &__title {
+      font-size: 17px;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .problems-question {
+    height: auto;
+    min-height: 40vh;
+    padding: 40px 20px;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    &__title {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  li.tab-content {
+    flex-direction: column;
+    padding: 20px 15px;
+
+    div {
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 10px auto;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    div.second {
+      width: 100%;
+      font-size: 15px;
+    }
+
+    div.tab-last {
+      width: 100%;
+    }
+  }
+
+  .about-end-links {
+    padding: 50px 20px;
+
+    &__text {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    &__links-container {
+      width: 100%;
+      flex-direction: column;
+      gap: 15px 0;
+    }
+
+    &__link {
+      width: 70%;
+    }
+  }
+
+  .pcss3t>ul,
+  .pcss3t>ul>li,
+  .pcss2t>ul,
+  .pcss2t>ul>li,
+  .pcss1t>ul,
+  .pcss1t>ul>li {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .slides {
+    flex-direction: column;
+  }
+
+  .slide,
+  .slide2,
+  .slide3,
+  .slide4 {
+    width: 100%;
+    height: 50px;
+  }
+
+  .active,
+  .active2,
+  .active3,
+  .active4 {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide a.action span,
+  .slide2 a.action2 span,
+  .slide3 a.action3 span,
+  .slide4 a.action4 span {
+    transform: none;
+    position: static;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .slide-content {
+    padding: 25px 20px;
+
+    h2 {
+      font-size: 17px;
+    }
+
+    > div {
+      flex-direction: column;
+      gap: 10px 0;
+    }
+
+    > div > p,
+    > p {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    > div > p.second,
+    > p.second {
+      font-size: 15px;
+    }
+  }
+
+  .solutions-link {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  .phrase {
+    font-size: 26px;
+  }
+
+  .morphing__title {
+    font-size: 26px;
+  }
+
+  .problems__block-image {
+    width: 65%;
+  }
+
+  .separator {
+    &__title {
+      font-size: 17px;
+    }
+  }
+
+  .about-description {
+    &__text {
+      width: 75%;
+      font-size: 16px;
+    }
+  }
+
+  .about-end-links {
+    &__text {
+      width: 65%;
+      font-size: 20px;
+    }
+
+    &__links-container {
+      width: 65%;
+    }
+  }
+
+  li.tab-content {
+    p {
+      font-size: 15px;
+    }
+
+    div.second {
+      font-size: 16px;
+    }
+  }
+}

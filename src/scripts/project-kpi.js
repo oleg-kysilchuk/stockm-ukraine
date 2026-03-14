@@ -1,5 +1,6 @@
 import "../pages/project-kpi.html";
 import "../styles/project-single-two.scss";
+import '../modules/owl.carousel.min.js';
 import '../modules/owl-slider';
 import '../styles/owl/owl.carousel.min.css'
 import '../styles/owl/owl.theme.default.min.css'

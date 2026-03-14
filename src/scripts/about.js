@@ -1,74 +1,36 @@
 import "../pages/about.html";
 import "../styles/about.scss";
-import {
-  highlightActivePage,
-  links,
-  showMobileNav,
-  hideMobileNav,
-} from "../modules/util";
+import "../modules/fslightbox.js";
+import "../modules/swiperAbout.js";
+import { highlightActivePage, links, initMobileNav } from "../modules/util";
 
 links.forEach((link) => highlightActivePage(link));
+initMobileNav();
 
-const mobNavBtn = document.querySelector(".mobile-menu-btn");
-const mobLinks = document.querySelectorAll(".mobile-navigation__link");
-const closeBtn = document.querySelector(".mobile-navigation__close-btn");
-
-mobNavBtn.addEventListener("click", showMobileNav);
-closeBtn.addEventListener("click", hideMobileNav);
-
-mobLinks.forEach(function (link) {
-  link.addEventListener("click", hideMobileNav);
+document.querySelectorAll("a[data-fslightbox='gallery']").forEach((a) => {
+  a.href = a.children[0].src;
 });
-
-const galleryLinks = [...document.querySelectorAll("a[data-fslightbox='gallery']")];
-const changedHref = galleryLinks.map((a) => {
-  a.href = a.children[0].src;        ///////////////////////////// DELETE THIS BEFORE LOAD ON HOSTING!!!!!!
-});
-
-function toggleAccordion() {
-  accordionItems.forEach(i => {
-    i.classList.remove('active')
-  })
-  this.classList.toggle('active');
-}
+refreshFsLightbox();
 
 const accordionItems = document.querySelectorAll('.accordion__item');
-accordionItems.forEach(i => {
-  i.addEventListener('click', toggleAccordion)
-})
+accordionItems.forEach((item) => {
+  item.addEventListener('click', function () {
+    accordionItems.forEach((i) => i.classList.remove('active'));
+    this.classList.toggle('active');
+  });
+});
 
-$(document).ready(function(){
-
-  $(".action").click(function(e){
+[
+  [".action",  ".slide",  "active"],
+  [".action2", ".slide2", "active2"],
+  [".action3", ".slide3", "active3"],
+  [".action4", ".slide4", "active4"],
+].forEach(([actionSel, slideSel, cls]) => {
+  document.querySelectorAll(actionSel).forEach((btn) => {
+    btn.addEventListener("click", (e) => {
       e.preventDefault();
-
-      $(".slide").removeClass("active");
-      var slide = $(this).closest(".slide");
-      slide.addClass("active");
+      document.querySelectorAll(slideSel).forEach((s) => s.classList.remove(cls));
+      btn.closest(slideSel).classList.add(cls);
+    });
   });
-
-  $(".action2").click(function(e){
-    e.preventDefault();
-
-    $(".slide2").removeClass("active2");
-    var slide = $(this).closest(".slide2");
-    slide.addClass("active2");
-  });
-
-  $(".action3").click(function(e){
-    e.preventDefault();
-
-    $(".slide3").removeClass("active3");
-    var slide = $(this).closest(".slide3");
-    slide.addClass("active3");
-  });
-
-  $(".action4").click(function(e){
-    e.preventDefault();
-
-    $(".slide4").removeClass("active4");
-    var slide = $(this).closest(".slide4");
-    slide.addClass("active4");
-  });
-
 });

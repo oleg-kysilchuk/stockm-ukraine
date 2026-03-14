@@ -7,5 +7,6 @@ const swiper = new Swiper('.swiper', {
     draggable: true,
     autoplay: {
         delay: 3000,
+        disableOnInteraction: false,
     },
 });

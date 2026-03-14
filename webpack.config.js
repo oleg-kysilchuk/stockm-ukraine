@@ -52,10 +52,11 @@ module.exports = {
     //   skippedFilesRegex: null, // RegExp to skip specific fonts by their names
     // }),
   ],
+  externals: {
+    jquery: 'jQuery',
+  },
   optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
+    splitChunks: false,
   },
   module: {
     rules: [

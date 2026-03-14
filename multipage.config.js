@@ -9,7 +9,6 @@ result.entry = {
   consulting: path.resolve(__dirname, "src/scripts", "consulting.js"),
   clients: path.resolve(__dirname, "src/scripts", "clients.js"),
   projects: path.resolve(__dirname, "src/scripts", "projects.js"),
-  events: path.resolve(__dirname, "src/scripts", "events.js"),
   contact: path.resolve(__dirname, "src/scripts", "contact.js"),
   'project-ekipazh': path.resolve(__dirname, "src/scripts", "project-ekipazh.js"),
   'project-kpi': path.resolve(__dirname, "src/scripts", "project-kpi.js"),
@@ -49,11 +48,6 @@ result.pages = [
     chunks: ["projects"],
     page: "pages/projects.html",
     template: path.resolve(__dirname, "src", "pages/projects.html"),
-  },
-  {
-    chunks: ["events"],
-    page: "pages/events.html",
-    template: path.resolve(__dirname, "src", "pages/events.html"),
   },
   {
     chunks: ["contact"],
